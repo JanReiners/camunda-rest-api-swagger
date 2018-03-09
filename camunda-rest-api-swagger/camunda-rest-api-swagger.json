@@ -17140,7 +17140,6 @@
           }
         },
         "processInstanceQuery": {
-          "description": "A process instance query like the request body described by POST /process-instance .",
           "$ref": "#/definitions/ProcessInstanceQueryDto"
         },
         "deleteReason": {
@@ -17151,7 +17150,6 @@
           "type": "boolean"
         },
         "historicProcessInstanceQuery": {
-          "description": "A historic process instance query like the request body described by POST /history/process-instance .",
           "$ref": "#/definitions/HistoricProcessInstanceQueryDto"
         },
         "skipSubprocesses": {
@@ -17489,7 +17487,6 @@
           "description": "The user id of the owner of the filter."
         },
         "query": {
-          "description": "The save query of the filter as JSON object.",
           "$ref": "#/definitions/AbstractQueryDtoObject"
         },
         "properties": {
@@ -17813,7 +17810,6 @@
       "type": "object",
       "properties": {
         "migrationPlan": {
-          "description": "The migration plan to execute. A JSON object corresponding to the migration plan interface in the engine as explained below.",
           "$ref": "#/definitions/MigrationPlanDto"
         },
         "processInstanceIds": {
@@ -17824,7 +17820,6 @@
           }
         },
         "processInstanceQuery": {
-          "description": "A process instance query like the request body described by POST /process-instance .",
           "$ref": "#/definitions/ProcessInstanceQueryDto"
         },
         "skipIoMappings": {
@@ -17935,7 +17930,6 @@
           }
         },
         "processInstanceQuery": {
-          "description": "A process instance query like the request body described by POST /process-instance .",
           "$ref": "#/definitions/ProcessInstanceQueryDto"
         },
         "processDefinitionId": {
@@ -18338,11 +18332,9 @@
           }
         },
         "processInstanceQuery": {
-          "description": "A process instance query like the request body for the Get Instances (POST) method.",
           "$ref": "#/definitions/ProcessInstanceQueryDto"
         },
         "historicProcessInstanceQuery": {
-          "description": "A historic process instance query like the request body described by POST /history/process-instance .",
           "$ref": "#/definitions/HistoricProcessInstanceQueryDto"
         },
         "retries": {
@@ -18363,7 +18355,6 @@
           }
         },
         "jobQuery": {
-          "description": "A job query like the request body for the Get Jobs (POST) method.",
           "$ref": "#/definitions/JobQueryDto"
         },
         "retries": {
@@ -18390,7 +18381,6 @@
           }
         },
         "externalTaskQuery": {
-          "description": "Query for the external tasks to set the number of retries for.",
           "$ref": "#/definitions/ExternalTaskQueryDto"
         },
         "processInstanceQuery": {
@@ -18987,11 +18977,9 @@
       "type": "object",
       "properties": {
         "profile": {
-          "description": "A JSON object containing variable key-value pairs. The object contains the following properties: id (String), firstName (String), lastName (String) and email (String).",
           "$ref": "#/definitions/UserProfileDto"
         },
         "credentials": {
-          "description": "A JSON object containing variable key-value pairs. The object contains the following property: password (String).",
           "$ref": "#/definitions/UserCredentialsDto"
         }
       }
