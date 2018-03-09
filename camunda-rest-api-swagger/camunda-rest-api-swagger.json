@@ -4316,13 +4316,6 @@
             "description": "true, if only the built-in ExecutionListeners should be notified with the end event.",
             "required": false,
             "type": "string"
-          },
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Parameter deploymentId",
-            "required": true,
-            "type": "string"
           }
         ],
         "responses": {

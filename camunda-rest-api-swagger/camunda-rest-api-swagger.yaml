@@ -3608,11 +3608,6 @@ paths:
             with the end event.
           required: false
           type: string
-        - name: id
-          in: path
-          description: Parameter deploymentId
-          required: true
-          type: string
       responses:
         '204':
           description: Request successful.
