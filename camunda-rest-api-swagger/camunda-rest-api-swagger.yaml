@@ -43,7 +43,6 @@ paths:
         Queries for a list of authorizations using a list of parameters. The
         size of the result set can be retrieved by using the Get Authorization
         Count method.
-      operationId: queryAuthorizations
       produces:
         - application/json
       parameters:
@@ -150,7 +149,6 @@ paths:
         not may depend on various factors, including the users authorizations to
         interact with this resource and the internal context of the process
         engine.
-      operationId: availableOperations
       produces:
         - application/json
       responses:
@@ -164,7 +162,6 @@ paths:
         - Authorization
       summary: Performs an authorization check for the currently authenticated user.
       description: Performs an authorization check for the currently authenticated user.
-      operationId: isUserAuthorized
       produces:
         - application/json
       parameters:
@@ -208,7 +205,6 @@ paths:
       description: >-
         Queries for authorizations using a list of parameters and retrieves the
         count.
-      operationId: getAuthorizationCount
       produces:
         - application/json
       parameters:
@@ -262,7 +258,6 @@ paths:
         - Authorization
       summary: Creates a new authorization.
       description: Creates a new authorization.
-      operationId: createAuthorization
       consumes:
         - application/json
       produces:
@@ -293,7 +288,6 @@ paths:
         - Authorization
       summary: Retrieves an authorization by id.
       description: Retrieves an authorization by id.
-      operationId: getAuthorization
       produces:
         - application/json
       parameters:
@@ -314,7 +308,6 @@ paths:
         - Authorization
       summary: Updates an authorization by id.
       description: Updates an authorization by id.
-      operationId: updateAuthorization
       consumes:
         - application/json
       produces:
@@ -349,7 +342,6 @@ paths:
         - Authorization
       summary: Deletes an authorization by id.
       description: Deletes an authorization by id.
-      operationId: deleteAuthorization
       produces:
         - application/json
       parameters:
@@ -384,7 +376,6 @@ paths:
         not may depend on various factors, including the users authorizations to
         interact with this resource and the internal context of the process
         engine.
-      operationId: availableOperations
       produces:
         - application/json
       parameters:
@@ -407,7 +398,6 @@ paths:
         Queries for batches that fulfill given parameters. Parameters may be the
         properties of batches, such as the id or type.  The size of the result
         set can be retrieved by using the Get Batch Count method.
-      operationId: getBatches
       produces:
         - application/json
       parameters:
@@ -503,7 +493,6 @@ paths:
       description: >-
         Requests the number of batches that fulfill the query criteria. Takes
         the same filtering parameters as the Get Batches method.
-      operationId: getBatchesCount
       produces:
         - application/json
       parameters:
@@ -557,7 +546,6 @@ paths:
         may be the properties of batches, such as the id or type.  The size of
         the result set can be retrieved by using the Get Batch Statistics Count
         method.
-      operationId: getStatistics
       produces:
         - application/json
       parameters:
@@ -654,7 +642,6 @@ paths:
         Requests the number of batch statistics that fulfill the query
         criteria.  Takes the same filtering parameters as the Get Batch
         Statistics method.
-      operationId: getStatisticsCount
       produces:
         - application/json
       parameters:
@@ -708,7 +695,6 @@ paths:
       description: >-
         Retrieves a batch by id, according to the `Batch` interface in the
         engine.
-      operationId: getBatch
       parameters:
         - name: id
           in: path
@@ -725,7 +711,6 @@ paths:
       description: >-
         Deletes a batch by id, including all related jobs and job definitions.
         Optionally also deletes the batch history.
-      operationId: deleteBatch
       parameters:
         - name: cascade
           in: query
@@ -750,7 +735,6 @@ paths:
         - Batch
       summary: Activates or suspends a batch by id.
       description: Activates or suspends a batch by id.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       parameters:
@@ -782,7 +766,6 @@ paths:
         may be the properties of case definitions, such as the name, key or
         version. The size of the result set can be retrieved by using the Get
         Case Definition Count method.
-      operationId: getCaseDefinitions
       produces:
         - application/json
       parameters:
@@ -945,7 +928,6 @@ paths:
       description: >-
         Requests the number of case definitions that fulfill the query criteria.
         Takes the same filtering parameters as the Get Case Definitions method.
-      operationId: getCaseDefinitionsCount
       produces:
         - application/json
       parameters:
@@ -1066,7 +1048,6 @@ paths:
       description: >-
         Retrieves a case definition according to the `CaseDefinition` interface
         in the engine.
-      operationId: getCaseDefinitionByKey
       produces:
         - application/json
       parameters:
@@ -1090,7 +1071,6 @@ paths:
       description: >-
         Instantiates a given case definition. Case variables and business key
         may be supplied in the request body.
-      operationId: createCaseInstance
       consumes:
         - application/json
       produces:
@@ -1136,7 +1116,6 @@ paths:
         - Case Definition
       summary: Retrieves the diagram of a case definition.
       description: Retrieves the diagram of a case definition.
-      operationId: getCaseDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -1162,7 +1141,6 @@ paths:
       description: >-
         Updates history time to live for case definition with given id. The
         field is used within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -1198,7 +1176,6 @@ paths:
       description: >-
         Retrieves a case definition according to the `CaseDefinition` interface
         in the engine.
-      operationId: getCaseDefinitionByKeyAndTenantId
       produces:
         - application/json
       parameters:
@@ -1227,7 +1204,6 @@ paths:
       description: >-
         Instantiates a given case definition. Case variables and business key
         may be supplied in the request body.
-      operationId: createCaseInstance
       consumes:
         - application/json
       produces:
@@ -1278,7 +1254,6 @@ paths:
         - Case Definition
       summary: Retrieves the diagram of a case definition.
       description: Retrieves the diagram of a case definition.
-      operationId: getCaseDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -1309,7 +1284,6 @@ paths:
       description: >-
         Updates history time to live for case definition with given id. The
         field is used within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -1346,7 +1320,6 @@ paths:
         - Case Definition
       summary: Retrieves the CMMN XML of a case definition.
       description: Retrieves the CMMN XML of a case definition.
-      operationId: getCaseDefinitionCmmnXml
       produces:
         - application/json
       parameters:
@@ -1375,7 +1348,6 @@ paths:
         - Case Definition
       summary: Retrieves the CMMN XML of a case definition.
       description: Retrieves the CMMN XML of a case definition.
-      operationId: getCaseDefinitionCmmnXml
       produces:
         - application/json
       parameters:
@@ -1403,7 +1375,6 @@ paths:
       description: >-
         Retrieves a case definition according to the `CaseDefinition` interface
         in the engine.
-      operationId: getCaseDefinitionById
       produces:
         - application/json
       parameters:
@@ -1427,7 +1398,6 @@ paths:
       description: >-
         Instantiates a given case definition. Case variables and business key
         may be supplied in the request body.
-      operationId: createCaseInstance
       consumes:
         - application/json
       produces:
@@ -1473,7 +1443,6 @@ paths:
         - Case Definition
       summary: Retrieves the diagram of a case definition.
       description: Retrieves the diagram of a case definition.
-      operationId: getCaseDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -1499,7 +1468,6 @@ paths:
       description: >-
         Updates history time to live for case definition with given id. The
         field is used within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -1531,7 +1499,6 @@ paths:
         - Case Definition
       summary: Retrieves the CMMN XML of a case definition.
       description: Retrieves the CMMN XML of a case definition.
-      operationId: getCaseDefinitionCmmnXml
       produces:
         - application/json
       parameters:
@@ -1559,7 +1526,6 @@ paths:
         may be static as well as dynamic runtime properties of case executions.
         The size of the result set can be retrieved by using the Get Case
         Execution Count method.
-      operationId: getCaseExecutions
       produces:
         - application/json
       parameters:
@@ -1742,7 +1708,6 @@ paths:
         object. This method is slightly more powerful than the Get Case
         Executions method because it allows filtering by multiple case variables
         of types `String`, `Number` or `Boolean`.
-      operationId: queryCaseExecutions
       consumes:
         - application/json
       produces:
@@ -1787,7 +1752,6 @@ paths:
       description: >-
         Queries for the number of case executions that fulfill given parameters.
         Takes the same parameters as the Get Case Executions method.
-      operationId: getCaseExecutionsCount
       produces:
         - application/json
       parameters:
@@ -1919,7 +1883,6 @@ paths:
         - Case Execution
       summary: Query Case Executions Count.
       description: Query Case Executions Count
-      operationId: queryCaseExecutionsCount
       consumes:
         - application/json
       produces:
@@ -1939,7 +1902,6 @@ paths:
       description: >-
         Retrieves a case execution by id, according to the `CaseExecution`
         interface in the engine.
-      operationId: getCaseExecution
       produces:
         - application/json
       parameters:
@@ -1961,7 +1923,6 @@ paths:
         - Case Execution
       summary: 'title: "Complete Case Execution" weight: 70.'
       description: 'title: "Complete Case Execution" weight: 70'
-      operationId: complete
       consumes:
         - application/json
       produces:
@@ -2003,7 +1964,6 @@ paths:
         Performs a transition from ENABLED state to DISABLED state. In relation
         to the state transition, it is possible to update or delete case
         instance variables (please note: deletion precedes update).
-      operationId: disable
       consumes:
         - application/json
       produces:
@@ -2042,7 +2002,6 @@ paths:
         - Case Execution
       summary: Retrieves all variables of a given case execution.
       description: Retrieves all variables of a given case execution.
-      operationId: getVariablesLocal
       produces:
         - application/json
       parameters:
@@ -2066,7 +2025,6 @@ paths:
         Updates or deletes the variables in the context of a case execution. The
         updates do not propagate upwards in the case execution hierarchy. Please
         note: deletion precedes update.
-      operationId: modifyVariables
       consumes:
         - application/json
       produces:
@@ -2104,7 +2062,6 @@ paths:
       description: >-
         Retrieves a variable from the context of a given case execution. Does
         not traverse the parent case execution hierarchy.
-      operationId: getVariable
       produces:
         - application/json
       parameters:
@@ -2140,7 +2097,6 @@ paths:
       description: >-
         Sets a variable in the context of a given case execution. Update does
         not propagate upwards in the case execution hierarchy.
-      operationId: putVariable
       consumes:
         - application/json
       produces:
@@ -2178,7 +2134,6 @@ paths:
       description: >-
         Deletes a variable in the context of a given case execution. Deletion
         does not propagate upwards in the case execution hierarchy.
-      operationId: deleteVariable
       produces:
         - application/json
       parameters:
@@ -2204,7 +2159,6 @@ paths:
         Retrieves a binary variable from the context of a given case execution.
         Does not traverse the parent case execution hierarchy. Applicable for
         byte array and file variables.
-      operationId: getVariableBinary
       produces:
         - application/json
       parameters:
@@ -2238,7 +2192,6 @@ paths:
       description: >-
         Sets the serialized value for a binary variable or the binary value for
         a file variable.
-      operationId: setBinaryVariable
       consumes:
         - multipart/form-data
       produces:
@@ -2276,7 +2229,6 @@ paths:
         Performs a transition from ENABLED state to ACTIVE state. In relation to
         the state transition, it is possible to update or delete case instance
         variables (please note: deletion precedes update).
-      operationId: manualStart
       consumes:
         - application/json
       produces:
@@ -2318,7 +2270,6 @@ paths:
         Performs a transition from DISABLED state to ENABLED state. In relation
         to the state transition, it is possible to update or delete case
         instance variables (please note: deletion precedes update).
-      operationId: reenable
       consumes:
         - application/json
       produces:
@@ -2357,7 +2308,6 @@ paths:
         - Case Execution
       summary: 'title: "Terminate Case Execution" weight: 90.'
       description: 'title: "Terminate Case Execution" weight: 90'
-      operationId: terminate
       consumes:
         - application/json
       produces:
@@ -2396,7 +2346,6 @@ paths:
         - Case Execution
       summary: Retrieves all variables of a given case execution by id.
       description: Retrieves all variables of a given case execution by id.
-      operationId: getVariables
       produces:
         - application/json
       parameters:
@@ -2420,7 +2369,6 @@ paths:
         Updates or deletes the variables in the context of a case execution. The
         updates do not propagate upwards in the case execution hierarchy. Please
         note: deletion precedes update.
-      operationId: modifyVariables
       consumes:
         - application/json
       produces:
@@ -2458,7 +2406,6 @@ paths:
       description: >-
         Retrieves a variable from the context of a given case execution. Does
         not traverse the parent case execution hierarchy.
-      operationId: getVariable
       produces:
         - application/json
       parameters:
@@ -2494,7 +2441,6 @@ paths:
       description: >-
         Sets a variable in the context of a given case execution. Update does
         not propagate upwards in the case execution hierarchy.
-      operationId: putVariable
       consumes:
         - application/json
       produces:
@@ -2532,7 +2478,6 @@ paths:
       description: >-
         Deletes a variable in the context of a given case execution. Deletion
         does not propagate upwards in the case execution hierarchy.
-      operationId: deleteVariable
       produces:
         - application/json
       parameters:
@@ -2558,7 +2503,6 @@ paths:
         Retrieves a binary variable from the context of a given case execution.
         Does not traverse the parent case execution hierarchy. Applicable for
         byte array and file variables.
-      operationId: getVariableBinary
       produces:
         - application/json
       parameters:
@@ -2592,7 +2536,6 @@ paths:
       description: >-
         Sets the serialized value for a binary variable or the binary value for
         a file variable.
-      operationId: setBinaryVariable
       consumes:
         - multipart/form-data
       produces:
@@ -2631,7 +2574,6 @@ paths:
         Parameters may be the properties of decision definitions, such as the
         name, key or version.  The size of the result set can be retrieved by
         using the Get Decision Definition Count method.
-      operationId: getDecisionDefinitions
       produces:
         - application/json
       parameters:
@@ -2816,7 +2758,6 @@ paths:
         Requests the number of decision definitions that fulfill the query
         criteria. Takes the same filtering parameters as the Get Decision
         Definitions method.
-      operationId: getDecisionDefinitionsCount
       produces:
         - application/json
       parameters:
@@ -2956,7 +2897,6 @@ paths:
       description: >-
         Retrieves a decision definition by id, according to the
         `DecisionDefinition` interface in the engine.
-      operationId: getDecisionDefinitionByKey
       produces:
         - application/json
       parameters:
@@ -2974,7 +2914,6 @@ paths:
         - Decision Definition
       summary: Retrieves the diagram of a decision definition.
       description: Retrieves the diagram of a decision definition.
-      operationId: getDecisionDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -2994,7 +2933,6 @@ paths:
       description: >-
         Evaluates a given decision and returns the result. The input values of
         the decision have to be supplied in the request body.
-      operationId: evaluateDecision
       consumes:
         - application/json
       produces:
@@ -3026,7 +2964,6 @@ paths:
       description: >-
         Updates history time to live for decision definition. The field is used
         within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -3062,7 +2999,6 @@ paths:
       description: >-
         Retrieves a decision definition by id, according to the
         `DecisionDefinition` interface in the engine.
-      operationId: getDecisionDefinitionByKeyAndTenantId
       produces:
         - application/json
       parameters:
@@ -3085,7 +3021,6 @@ paths:
         - Decision Definition
       summary: Retrieves the diagram of a decision definition.
       description: Retrieves the diagram of a decision definition.
-      operationId: getDecisionDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -3110,7 +3045,6 @@ paths:
       description: >-
         Evaluates a given decision and returns the result. The input values of
         the decision have to be supplied in the request body.
-      operationId: evaluateDecision
       consumes:
         - application/json
       produces:
@@ -3147,7 +3081,6 @@ paths:
       description: >-
         Updates history time to live for decision definition. The field is used
         within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -3184,7 +3117,6 @@ paths:
         - Decision Definition
       summary: Retrieves the DMN XML of a decision definition.
       description: Retrieves the DMN XML of a decision definition.
-      operationId: getDecisionDefinitionDmnXml
       produces:
         - application/json
       parameters:
@@ -3209,7 +3141,6 @@ paths:
         - Decision Definition
       summary: Retrieves the DMN XML of a decision definition.
       description: Retrieves the DMN XML of a decision definition.
-      operationId: getDecisionDefinitionDmnXml
       produces:
         - application/json
       parameters:
@@ -3233,7 +3164,6 @@ paths:
       description: >-
         Retrieves a decision definition by id, according to the
         `DecisionDefinition` interface in the engine.
-      operationId: getDecisionDefinitionById
       produces:
         - application/json
       parameters:
@@ -3251,7 +3181,6 @@ paths:
         - Decision Definition
       summary: Retrieves the diagram of a decision definition.
       description: Retrieves the diagram of a decision definition.
-      operationId: getDecisionDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -3271,7 +3200,6 @@ paths:
       description: >-
         Evaluates a given decision and returns the result. The input values of
         the decision have to be supplied in the request body.
-      operationId: evaluateDecision
       consumes:
         - application/json
       produces:
@@ -3303,7 +3231,6 @@ paths:
       description: >-
         Updates history time to live for decision definition. The field is used
         within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -3335,7 +3262,6 @@ paths:
         - Decision Definition
       summary: Retrieves the DMN XML of a decision definition.
       description: Retrieves the DMN XML of a decision definition.
-      operationId: getDecisionDefinitionDmnXml
       produces:
         - application/json
       parameters:
@@ -3359,7 +3285,6 @@ paths:
         the properties of deployments, such as the id or name or a range of the
         deployment time. The size of the result set can be retrieved by using
         the Get Deployment count method.
-      operationId: getDeployments
       produces:
         - application/json
       parameters:
@@ -3491,7 +3416,6 @@ paths:
       description: >-
         Queries for the number of deployments that fulfill given parameters.
         Takes the same parameters as the Get Deployments method.
-      operationId: getDeploymentsCount
       produces:
         - application/json
       parameters:
@@ -3611,7 +3535,6 @@ paths:
         scripts or EL expressions to customize process behavior. This may be
         abused for remote execution of arbitrary code. See the section on
         security considerations for custom code in the user guide for details.
-      operationId: createDeployment
       consumes:
         - multipart/form-data
       produces:
@@ -3638,7 +3561,6 @@ paths:
       description: >-
         Retrieves a deployment by id, according to the `Deployment` interface of
         the engine.
-      operationId: getDeployment
       produces:
         - application/json
       parameters:
@@ -3659,7 +3581,6 @@ paths:
         - Deployment
       summary: Deletes a deployment by id.
       description: Deletes a deployment by id.
-      operationId: deleteDeployment
       produces:
         - application/json
       parameters:
@@ -3713,7 +3634,6 @@ paths:
         expressions to customize process behavior. This may be abused for remote
         execution of arbitrary code. See the section on security considerations
         for custom code in the user guide for details.
-      operationId: redeploy
       produces:
         - application/json
       parameters:
@@ -3743,7 +3663,6 @@ paths:
         - Deployment
       summary: Retrieves all deployment resources of a given deployment.
       description: Retrieves all deployment resources of a given deployment.
-      operationId: getDeploymentResources
       produces:
         - application/json
       parameters:
@@ -3765,7 +3684,6 @@ paths:
         - Deployment
       summary: Retrieves a deployment resource by resource id for the given deployment.
       description: Retrieves a deployment resource by resource id for the given deployment.
-      operationId: getDeploymentResource
       produces:
         - application/json
       parameters:
@@ -3798,7 +3716,6 @@ paths:
       description: >-
         Retrieves the binary content of a deployment resource for the given
         deployment by id.
-      operationId: getDeploymentResourceData
       produces:
         - application/json
       parameters:
@@ -3833,7 +3750,6 @@ paths:
         be static as well as dynamic runtime properties of executions. The size
         of the result set can be retrieved by using the Get Execution Count
         method.
-      operationId: getExecutions
       produces:
         - application/json
       parameters:
@@ -4014,7 +3930,6 @@ paths:
         object. This method is slightly more powerful than the Get Executions
         method because it allows to filter by multiple instance and execution
         variables of types `String`, `Number` or `Boolean`.
-      operationId: queryExecutions
       consumes:
         - application/json
       produces:
@@ -4059,7 +3974,6 @@ paths:
       description: >-
         Queries for the number of executions that fulfill given parameters.
         Takes the same parameters as the Get Executions method.
-      operationId: getExecutionsCount
       produces:
         - application/json
       parameters:
@@ -4194,7 +4108,6 @@ paths:
         method takes the same message body as the Get Executions (POST) method
         and therefore it is slightly more powerful than the Get Execution Count
         method.
-      operationId: queryExecutionsCount
       consumes:
         - application/json
       produces:
@@ -4227,7 +4140,6 @@ paths:
       description: >-
         Retrieves an execution by id, according to the `Execution` interface in
         the engine.
-      operationId: getExecution
       produces:
         - application/json
       parameters:
@@ -4249,7 +4161,6 @@ paths:
         - Execution
       summary: Create Incident.
       description: Create Incident
-      operationId: createIncident
       consumes:
         - application/json
       produces:
@@ -4271,7 +4182,6 @@ paths:
         - Execution
       summary: Retrieves all variables of a given execution by id.
       description: Retrieves all variables of a given execution by id.
-      operationId: getLocalVariables
       produces:
         - application/json
       parameters:
@@ -4295,7 +4205,6 @@ paths:
         Updates or deletes the variables in the context of a case execution. The
         updates do not propagate upwards in the case execution hierarchy. Please
         note: deletion precedes update.
-      operationId: modifyVariables
       consumes:
         - application/json
       produces:
@@ -4333,7 +4242,6 @@ paths:
       description: >-
         Retrieves a variable from the context of a given case execution. Does
         not traverse the parent case execution hierarchy.
-      operationId: getVariable
       produces:
         - application/json
       parameters:
@@ -4369,7 +4277,6 @@ paths:
       description: >-
         Sets a variable in the context of a given case execution. Update does
         not propagate upwards in the case execution hierarchy.
-      operationId: putVariable
       consumes:
         - application/json
       produces:
@@ -4407,7 +4314,6 @@ paths:
       description: >-
         Deletes a variable in the context of a given case execution. Deletion
         does not propagate upwards in the case execution hierarchy.
-      operationId: deleteVariable
       produces:
         - application/json
       parameters:
@@ -4433,7 +4339,6 @@ paths:
         Retrieves a binary variable from the context of a given case execution.
         Does not traverse the parent case execution hierarchy. Applicable for
         byte array and file variables.
-      operationId: getVariableBinary
       produces:
         - application/json
       parameters:
@@ -4467,7 +4372,6 @@ paths:
       description: >-
         Sets the serialized value for a binary variable or the binary value for
         a file variable.
-      operationId: setBinaryVariable
       consumes:
         - multipart/form-data
       produces:
@@ -4506,7 +4410,6 @@ paths:
       description: >-
         Retrieves a message event subscription for a given execution by id and a
         message name.
-      operationId: getMessageEventSubscription
       produces:
         - application/json
       parameters:
@@ -4540,7 +4443,6 @@ paths:
         Delivers a message to a specific execution by id, to trigger an existing
         message event subscription. Inject process variables as the message's
         payload.
-      operationId: triggerEvent
       consumes:
         - application/json
       produces:
@@ -4583,7 +4485,6 @@ paths:
       description: >-
         Signals an execution by id. Can for example be used to explicitly skip
         user tasks or signal asynchronous continuations.
-      operationId: signalExecution
       consumes:
         - application/json
       produces:
@@ -4619,7 +4520,6 @@ paths:
         may be static as well as dynamic runtime properties of executions. The
         size of the result set can be retrieved by using the Get External Task
         Count method.
-      operationId: getExternalTasks
       produces:
         - application/json
       parameters:
@@ -4822,7 +4722,6 @@ paths:
         a JSON object. This method is slightly more powerful than the Get
         External Tasks method because it allows to specify a hierarchical result
         sorting.
-      operationId: queryExternalTasks
       consumes:
         - application/json
       produces:
@@ -4866,7 +4765,6 @@ paths:
       description: >-
         Queries for the number of external tasks that fulfill given parameters.
         Takes the same parameters as the Get External Tasks method.
-      operationId: getExternalTasksCount
       produces:
         - application/json
       parameters:
@@ -5020,7 +4918,6 @@ paths:
         Queries for the number of external tasks that fulfill given parameters.
         This method takes the same message body as the Get External Tasks (POST)
         method.
-      operationId: queryExternalTasksCount
       consumes:
         - application/json
       produces:
@@ -5053,7 +4950,6 @@ paths:
         Fetches and locks a specific number of external tasks for execution by a
         worker. Query can be restricted to specific task topics and for each
         task topic an individual lock time can be provided.
-      operationId: fetchAndLock
       consumes:
         - application/json
       produces:
@@ -5082,7 +4978,6 @@ paths:
         - External
       summary: Set Retries.
       description: Set Retries
-      operationId: setRetries
       consumes:
         - application/json
       responses:
@@ -5098,7 +4993,6 @@ paths:
       description: >-
         Sets the number of retries left to execute external tasks by id
         asynchronously. If retries are set to 0, an incident is created.
-      operationId: setRetriesAsync
       consumes:
         - application/json
       produces:
@@ -5136,7 +5030,6 @@ paths:
       description: >-
         Retrieves an external task by id, corresponding to the `ExternalTask`
         interface in the engine.
-      operationId: getExternalTask
       parameters:
         - name: id
           in: path
@@ -5160,7 +5053,6 @@ paths:
       description: >-
         Reports a business error in the context of a running external task by
         id. The error code must be specified to identify the BPMN error handler.
-      operationId: handleBpmnError
       consumes:
         - application/json
       parameters:
@@ -5197,7 +5089,6 @@ paths:
         - External
       summary: Completes an external task by id and updates process variables.
       description: Completes an external task by id and updates process variables.
-      operationId: complete
       consumes:
         - application/json
       parameters:
@@ -5234,7 +5125,6 @@ paths:
         - External
       summary: Get Error Details.
       description: Get Error Details
-      operationId: getErrorDetails
       produces:
         - text/plain
       parameters:
@@ -5254,7 +5144,6 @@ paths:
         - External
       summary: Extend Lock.
       description: Extend Lock
-      operationId: extendLock
       consumes:
         - application/json
       parameters:
@@ -5275,7 +5164,6 @@ paths:
         Reports a failure to execute an external task by id. A number of retries
         and a timeout until the task can be retried can be specified. If retries
         are set to 0, an incident for this task is created.
-      operationId: handleFailure
       consumes:
         - application/json
       parameters:
@@ -5314,7 +5202,6 @@ paths:
       description: >-
         Sets the priority of an existing external task by id. The default value
         of a priority is 0.
-      operationId: setPriority
       consumes:
         - application/json
       parameters:
@@ -5345,7 +5232,6 @@ paths:
       description: >-
         Sets the number of retries left to execute an external task by id. If
         retries are set to 0, an incident is created.
-      operationId: setRetries
       consumes:
         - application/json
       parameters:
@@ -5381,7 +5267,6 @@ paths:
       description: >-
         Unlocks an external task by id. Clears the task's lock expiration time
         and worker id.
-      operationId: unlock
       parameters:
         - name: id
           in: path
@@ -5404,7 +5289,6 @@ paths:
       description: >-
         Queries for a list of filters using a list of parameters. The size of
         the result set can be retrieved by using the Get Filter Count method.
-      operationId: getFilters
       produces:
         - application/json
       parameters:
@@ -5513,7 +5397,6 @@ paths:
         Whether the user can perform an operation or not may depend on various
         factors, including the users authorizations to interact with this
         resource and the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       responses:
@@ -5530,7 +5413,6 @@ paths:
         Retrieves the number of filters that fulfill a provided query.
         Corresponds to the size of the result set when using the Get Filters
         method.
-      operationId: getFiltersCount
       produces:
         - application/json
       parameters:
@@ -5583,7 +5465,6 @@ paths:
         specify EL expressions in their parameters and may therefore be abused
         for remote code execution. See the section on security considerations
         for custom code in the user guide for details.
-      operationId: createFilter
       consumes:
         - application/json
       produces:
@@ -5610,7 +5491,6 @@ paths:
       description: >-
         Retrieves a single filter by id, according to the `Filter` interface in
         the engine.
-      operationId: getFilter
       produces:
         - application/json
       parameters:
@@ -5640,7 +5520,6 @@ paths:
         allow to specify EL expressions in their parameters and may therefore be
         abused for remote code execution. See the section on security
         considerations for custom code in the user guide for details.
-      operationId: updateFilter
       consumes:
         - application/json
       produces:
@@ -5675,7 +5554,6 @@ paths:
         - Filter
       summary: Deletes a filter by id.
       description: Deletes a filter by id.
-      operationId: deleteFilter
       produces:
         - application/json
       parameters:
@@ -5709,7 +5587,6 @@ paths:
         Whether the user can perform an operation or not may depend on various
         factors, including the users authorizations to interact with this
         resource and the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       parameters:
@@ -5729,7 +5606,6 @@ paths:
         - Filter
       summary: Executes the saved query of the filter by id and returns the count.
       description: Executes the saved query of the filter by id and returns the count.
-      operationId: executeCount
       produces:
         - application/json
       parameters:
@@ -5764,7 +5640,6 @@ paths:
         parameters and may therefore be abused for remote code execution. See
         the section on security considerations for custom code in the user guide
         for details.
-      operationId: queryCount
       consumes:
         - application/json
       produces:
@@ -5808,7 +5683,6 @@ paths:
       description: >-
         Executes the saved query of the filter by id and returns the result
         list.
-      operationId: executeList
       produces:
         - application/json
         - application/hal+json
@@ -5858,7 +5732,6 @@ paths:
         their parameters and may therefore be abused for remote code execution.
         See the section on security considerations for custom code in the user
         guide for details.
-      operationId: queryList
       consumes:
         - application/json
       produces:
@@ -5903,7 +5776,6 @@ paths:
       description: >-
         Executes the saved query of the filter by id and returns the single
         result.
-      operationId: executeSingleResult
       produces:
         - application/json
         - application/hal+json
@@ -5947,7 +5819,6 @@ paths:
         expressions in their parameters and may therefore be abused for remote
         code execution. See the section on security considerations for custom
         code in the user guide for details.
-      operationId: querySingleResult
       consumes:
         - application/json
       produces:
@@ -5993,7 +5864,6 @@ paths:
       description: >-
         Queries for a list of groups using a list of parameters. The size of the
         result set can be retrieved by using the Get Group Count method.
-      operationId: queryGroups
       produces:
         - application/json
       parameters:
@@ -6095,7 +5965,6 @@ paths:
         the user can perform an operation or not may depend on various things,
         including the users authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       responses:
@@ -6109,7 +5978,6 @@ paths:
         - Group
       summary: Queries for groups using a list of parameters and retrieves the count.
       description: Queries for groups using a list of parameters and retrieves the count.
-      operationId: getGroupCount
       produces:
         - application/json
       parameters:
@@ -6159,7 +6027,6 @@ paths:
         - Group
       summary: Creates a new group.
       description: Creates a new group.
-      operationId: createGroup
       consumes:
         - application/json
       produces:
@@ -6188,7 +6055,6 @@ paths:
         - Group
       summary: Retrieves a group by id.
       description: Retrieves a group by id.
-      operationId: getGroup
       produces:
         - application/json
       parameters:
@@ -6209,7 +6075,6 @@ paths:
         - Group
       summary: Updates a given group by id.
       description: Updates a given group by id.
-      operationId: updateGroup
       consumes:
         - application/json
       produces:
@@ -6244,7 +6109,6 @@ paths:
         - Group
       summary: Deletes a group by id.
       description: Deletes a group by id.
-      operationId: deleteGroup
       produces:
         - application/json
       parameters:
@@ -6278,7 +6142,6 @@ paths:
         the user can perform an operation or not may depend on various things,
         including the users authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       parameters:
@@ -6298,7 +6161,6 @@ paths:
         - Group
       summary: Get Group Members Resource.
       description: Get Group Members Resource
-      operationId: getGroupMembersResource
       produces:
         - application/json
       parameters:
@@ -6322,7 +6184,6 @@ paths:
         the user can perform an operation or not may depend on various things,
         including the users authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       parameters:
@@ -6342,7 +6203,6 @@ paths:
         - Group
       summary: Adds a member to a group.
       description: Adds a member to a group.
-      operationId: createGroupMember
       produces:
         - application/json
       parameters:
@@ -6372,7 +6232,6 @@ paths:
         - Group
       summary: Removes a member from a group.
       description: Removes a member from a group.
-      operationId: deleteGroupMember
       produces:
         - application/json
       parameters:
@@ -6407,7 +6266,6 @@ paths:
       description: >-
         Gets the groups of a user by id and includes all users that share a
         group with the given user.
-      operationId: getGroupInfo
       produces:
         - application/json
       parameters:
@@ -6431,7 +6289,6 @@ paths:
         - Identity
       summary: Verifies that user credentials are valid.
       description: Verifies that user credentials are valid.
-      operationId: verifyUser
       consumes:
         - application/json
       produces:
@@ -6458,7 +6315,6 @@ paths:
       description: >-
         Queries for jobs that fulfill given parameters. The size of the result
         set can be retrieved by using the Get Job Count method.
-      operationId: getJobs
       produces:
         - application/json
       parameters:
@@ -6673,7 +6529,6 @@ paths:
         Queries for jobs that fulfill given parameters. This method is slightly
         more powerful than the Get Jobs method because it allows filtering by
         multiple jobs of types String, Number or Boolean.
-      operationId: queryJobs
       consumes:
         - application/json
       produces:
@@ -6719,7 +6574,6 @@ paths:
         Queries for job definitions that fulfill given parameters. The size of
         the result set can be retrieved by using the Get Job Definition Count
         method.
-      operationId: getJobDefinitions
       produces:
         - application/json
       parameters:
@@ -6857,7 +6711,6 @@ paths:
         is slightly more powerful than the Get Job Definitions method because it
         allows filtering by multiple job definitions of types String, Number or
         Boolean.
-      operationId: queryJobDefinitions
       consumes:
         - application/json
       produces:
@@ -6901,7 +6754,6 @@ paths:
       description: >-
         Queries for the number of job definitions that fulfill given parameters.
         Takes the same parameters as the Get Job Definitions method.
-      operationId: getJobDefinitionsCount
       produces:
         - application/json
       parameters:
@@ -7008,7 +6860,6 @@ paths:
         This method takes the same message body as the Get Job Definitions
         (POST) method and therefore it is slightly more powerful than the Get
         Job Definition Count method.
-      operationId: queryJobDefinitionsCount
       consumes:
         - application/json
       produces:
@@ -7040,7 +6891,6 @@ paths:
       description: >-
         Activates or suspends job definitions with the given process definition
         id.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -7071,7 +6921,6 @@ paths:
       description: >-
         Retrieves a job definition by id, according to the `JobDefinition`
         interface in the engine.
-      operationId: getJobDefinition
       produces:
         - application/json
       parameters:
@@ -7101,7 +6950,6 @@ paths:
         meaning that a new job's priority will not be determined based on its
         definition's priority any longer. See the user guide on job
         prioritization for details.
-      operationId: setJobPriority
       consumes:
         - application/json
       produces:
@@ -7139,7 +6987,6 @@ paths:
       description: >-
         Sets the number of retries of all failed jobs associated with the given
         job definition id.
-      operationId: setJobRetries
       consumes:
         - application/json
       produces:
@@ -7169,7 +7016,6 @@ paths:
         - Job Definition
       summary: Activates or suspends a given job definition by id.
       description: Activates or suspends a given job definition by id.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -7202,7 +7048,6 @@ paths:
       description: >-
         Queries for the number of jobs that fulfill given parameters. Takes the
         same parameters as the Get Jobs method.
-      operationId: getJobsCount
       produces:
         - application/json
       parameters:
@@ -7366,7 +7211,6 @@ paths:
         Queries for jobs that fulfill given parameters. This method takes the
         same message body as the Get Jobs (POST) method and therefore it is
         slightly more powerful than the Get Job Count method.
-      operationId: queryJobsCount
       consumes:
         - application/json
       produces:
@@ -7395,7 +7239,6 @@ paths:
         - Job Execution
       summary: Create a batch to set retries of jobs asynchronously.
       description: Create a batch to set retries of jobs asynchronously.
-      operationId: setRetries
       consumes:
         - application/json
       produces:
@@ -7424,7 +7267,6 @@ paths:
         - Job Execution
       summary: Activates or suspends jobs with the given process definition id.
       description: Activates or suspends jobs with the given process definition id.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -7450,7 +7292,6 @@ paths:
         - Job Execution
       summary: 'Retrieves a job by id, according to the `Job` interface in the engine.'
       description: 'Retrieves a job by id, according to the `Job` interface in the engine.'
-      operationId: getJob
       produces:
         - application/json
       parameters:
@@ -7471,7 +7312,6 @@ paths:
         - Job Execution
       summary: Deletes a job by id.
       description: Deletes a job by id.
-      operationId: deleteJob
       produces:
         - application/json
       parameters:
@@ -7497,7 +7337,6 @@ paths:
         - Job Execution
       summary: Updates the due date of a job by id.
       description: Updates the due date of a job by id.
-      operationId: setJobDuedate
       consumes:
         - application/json
       produces:
@@ -7533,7 +7372,6 @@ paths:
       description: |-
         Executes a job by id. 
         Note: The execution of the job happens synchronously in the same thread.
-      operationId: executeJob
       produces:
         - application/json
       parameters:
@@ -7559,7 +7397,6 @@ paths:
         - Job Execution
       summary: Sets the execution priority of a job by id.
       description: Sets the execution priority of a job by id.
-      operationId: setJobPriority
       consumes:
         - application/json
       produces:
@@ -7593,7 +7430,6 @@ paths:
         - Job Execution
       summary: Sets the retries of the job to the given number of retries by id.
       description: Sets the retries of the job to the given number of retries by id.
-      operationId: setJobRetries
       consumes:
         - application/json
       produces:
@@ -7627,7 +7463,6 @@ paths:
         - Job Execution
       summary: Retrieves the exception stacktrace corresponding to the passed job id.
       description: Retrieves the exception stacktrace corresponding to the passed job id.
-      operationId: getStacktrace
       produces:
         - text/plain
       parameters:
@@ -7651,7 +7486,6 @@ paths:
         - Job Execution
       summary: Activates or suspends a given job by id.
       description: Activates or suspends a given job by id.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -7686,7 +7520,6 @@ paths:
         `MessageCorrelationBuilder#correlateAllWithResult()`. For more
         information about the correlation behavior, see the Message Events
         section of the BPMN 2.0 Implementation Reference.
-      operationId: deliverMessage
       consumes:
         - application/json
       produces:
@@ -7726,7 +7559,6 @@ paths:
         Plan Async (Batch) method.For more information about the difference
         between synchronous and asynchronous execution of a migration plan,
         please refer to the related section of the user guide.
-      operationId: executeMigrationPlan
       consumes:
         - application/json
       parameters:
@@ -7752,7 +7584,6 @@ paths:
         Migration Plan method.For more information about the difference between
         synchronous and asynchronous execution of a migration plan, please refer
         to the related section of the user guide.
-      operationId: executeMigrationPlanAsync
       consumes:
         - application/json
       produces:
@@ -7778,7 +7609,6 @@ paths:
         Generates a migration plan for two process definitions. The generated
         migration plan contains migration instructions which map equal
         activities between the two process definitions.
-      operationId: generateMigrationPlan
       consumes:
         - application/json
       produces:
@@ -7803,7 +7633,6 @@ paths:
       description: >-
         Validates a migration plan statically without executing it. This
         corresponds to the creation time validation described in the user guide.
-      operationId: validateMigrationPlan
       consumes:
         - application/json
       produces:
@@ -7826,7 +7655,6 @@ paths:
         - Modification
       summary: Execute Modification.
       description: Execute Modification
-      operationId: executeModification
       consumes:
         - application/json
       produces:
@@ -7845,7 +7673,6 @@ paths:
         method.For more information about the difference between synchronous and
         asynchronous execution of a modification, please refer to the related
         section of the user guide.
-      operationId: executeModificationAsync
       consumes:
         - application/json
       produces:
@@ -7872,7 +7699,6 @@ paths:
         Parameters may be the properties of process definitions, such as the
         name, key or version. The size of the result set can be retrieved by
         using the Get Definition Count method.
-      operationId: getProcessDefinitions
       produces:
         - application/json
       parameters:
@@ -8094,7 +7920,6 @@ paths:
         Requests the number of process definitions that fulfill the query
         criteria. Takes the same filtering parameters as the Get Definitions
         method.
-      operationId: getProcessDefinitionsCount
       produces:
         - application/json
       parameters:
@@ -8268,7 +8093,6 @@ paths:
       description: >-
         Retrieves a process definition according to the `ProcessDefinition`
         interface in the engine.
-      operationId: getProcessDefinitionByKey
       produces:
         - application/json
       parameters:
@@ -8289,7 +8113,6 @@ paths:
         - Process Definition
       summary: Delete Process Definition.
       description: Delete Process Definition
-      operationId: deleteProcessDefinition
       produces:
         - application/json
       parameters:
@@ -8315,7 +8138,6 @@ paths:
         - Process Definition
       summary: Delete Process Definitions By Key.
       description: Delete Process Definitions By Key
-      operationId: deleteProcessDefinitionsByKey
       produces:
         - application/json
       parameters:
@@ -8340,7 +8162,6 @@ paths:
         - Process Definition
       summary: Get Deployed Start Form.
       description: Get Deployed Start Form
-      operationId: getDeployedStartForm
       produces:
         - application/json
       parameters:
@@ -8358,7 +8179,6 @@ paths:
         - Process Definition
       summary: Retrieves the diagram of a process definition.
       description: Retrieves the diagram of a process definition.
-      operationId: getProcessDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -8389,7 +8209,6 @@ paths:
         variables take form data specified on the start event into account. If
         form fields are defined, the variable types and default values of the
         form fields are taken into account.
-      operationId: getFormVariables
       produces:
         - application/json
       parameters:
@@ -8428,7 +8247,6 @@ paths:
       description: >-
         Updates history time to live for process definition. The field is used
         within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -8462,7 +8280,6 @@ paths:
       description: >-
         Retrieves the rendered form for a process definition. This method can be
         used for getting the HTML rendering of a Generated Task Form.
-      operationId: getRenderedForm
       produces:
         - application/xhtml+xml
       parameters:
@@ -8488,7 +8305,6 @@ paths:
         - Process Definition
       summary: Restart Process Instance.
       description: Restart Process Instance
-      operationId: restartProcessInstance
       consumes:
         - application/json
       produces:
@@ -8508,7 +8324,6 @@ paths:
         - Process Definition
       summary: Restart Process Instance Async.
       description: Restart Process Instance Async
-      operationId: restartProcessInstanceAsync
       consumes:
         - application/json
       produces:
@@ -8532,7 +8347,6 @@ paths:
       description: >-
         Instantiates a given process definition. Process variables and business
         key may be supplied in the request body.
-      operationId: startProcessInstance
       consumes:
         - application/json
       produces:
@@ -8576,7 +8390,6 @@ paths:
       description: >-
         Retrieves the key of the start form for a process definition. The form
         key corresponds to the `FormData#formKey` property in the engine.
-      operationId: getStartForm
       produces:
         - application/json
       parameters:
@@ -8612,7 +8425,6 @@ paths:
         number of incidents either grouped by incident types or for a specific
         incident type.
          Note: This does not include historic data.
-      operationId: getActivityStatistics
       produces:
         - application/json
       parameters:
@@ -8663,7 +8475,6 @@ paths:
         business key. If the start event has Form Field Metadata defined, the
         process engine will perform backend validation for any form fields which
         have validators defined. See Documentation on Generated Task Forms.
-      operationId: submitForm
       consumes:
         - application/json
       produces:
@@ -8711,7 +8522,6 @@ paths:
       description: >-
         Activates or suspends a given process definition by id or by latest
         version of process definition key.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -8750,7 +8560,6 @@ paths:
       description: >-
         Retrieves a process definition according to the `ProcessDefinition`
         interface in the engine.
-      operationId: getProcessDefinitionByKeyAndTenantId
       produces:
         - application/json
       parameters:
@@ -8776,7 +8585,6 @@ paths:
         - Process Definition
       summary: Delete Process Definition.
       description: Delete Process Definition
-      operationId: deleteProcessDefinition
       produces:
         - application/json
       parameters:
@@ -8807,7 +8615,6 @@ paths:
         - Process Definition
       summary: Delete Process Definitions By Key And Tenant Id.
       description: Delete Process Definitions By Key And Tenant Id
-      operationId: deleteProcessDefinitionsByKeyAndTenantId
       produces:
         - application/json
       parameters:
@@ -8836,7 +8643,6 @@ paths:
         - Process Definition
       summary: Get Deployed Start Form.
       description: Get Deployed Start Form
-      operationId: getDeployedStartForm
       produces:
         - application/json
       parameters:
@@ -8859,7 +8665,6 @@ paths:
         - Process Definition
       summary: Retrieves the diagram of a process definition.
       description: Retrieves the diagram of a process definition.
-      operationId: getProcessDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -8895,7 +8700,6 @@ paths:
         variables take form data specified on the start event into account. If
         form fields are defined, the variable types and default values of the
         form fields are taken into account.
-      operationId: getFormVariables
       produces:
         - application/json
       parameters:
@@ -8939,7 +8743,6 @@ paths:
       description: >-
         Updates history time to live for process definition. The field is used
         within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -8978,7 +8781,6 @@ paths:
       description: >-
         Retrieves the rendered form for a process definition. This method can be
         used for getting the HTML rendering of a Generated Task Form.
-      operationId: getRenderedForm
       produces:
         - application/xhtml+xml
       parameters:
@@ -9009,7 +8811,6 @@ paths:
         - Process Definition
       summary: Restart Process Instance.
       description: Restart Process Instance
-      operationId: restartProcessInstance
       consumes:
         - application/json
       produces:
@@ -9034,7 +8835,6 @@ paths:
         - Process Definition
       summary: Restart Process Instance Async.
       description: Restart Process Instance Async
-      operationId: restartProcessInstanceAsync
       consumes:
         - application/json
       produces:
@@ -9063,7 +8863,6 @@ paths:
       description: >-
         Instantiates a given process definition. Process variables and business
         key may be supplied in the request body.
-      operationId: startProcessInstance
       consumes:
         - application/json
       produces:
@@ -9112,7 +8911,6 @@ paths:
       description: >-
         Retrieves the key of the start form for a process definition. The form
         key corresponds to the `FormData#formKey` property in the engine.
-      operationId: getStartForm
       produces:
         - application/json
       parameters:
@@ -9153,7 +8951,6 @@ paths:
         number of incidents either grouped by incident types or for a specific
         incident type.
          Note: This does not include historic data.
-      operationId: getActivityStatistics
       produces:
         - application/json
       parameters:
@@ -9209,7 +9006,6 @@ paths:
         business key. If the start event has Form Field Metadata defined, the
         process engine will perform backend validation for any form fields which
         have validators defined. See Documentation on Generated Task Forms.
-      operationId: submitForm
       consumes:
         - application/json
       produces:
@@ -9262,7 +9058,6 @@ paths:
       description: >-
         Activates or suspends a given process definition by id or by latest
         version of process definition key.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -9302,7 +9097,6 @@ paths:
         - Process Definition
       summary: Retrieves the BPMN 2.
       description: Retrieves the BPMN 2.0 XML of a process definition.
-      operationId: getProcessDefinitionBpmn20Xml
       produces:
         - application/json
       parameters:
@@ -9331,7 +9125,6 @@ paths:
         - Process Definition
       summary: Retrieves the BPMN 2.
       description: Retrieves the BPMN 2.0 XML of a process definition.
-      operationId: getProcessDefinitionBpmn20Xml
       produces:
         - application/json
       parameters:
@@ -9363,7 +9156,6 @@ paths:
         number of incidents either grouped by incident types or for a specific
         incident type.
          Note: This does not include historic data.
-      operationId: getStatistics
       produces:
         - application/json
       parameters:
@@ -9403,7 +9195,6 @@ paths:
       description: >-
         Activates or suspends process definitions with the given process
         definition key.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -9434,7 +9225,6 @@ paths:
       description: >-
         Retrieves a process definition according to the `ProcessDefinition`
         interface in the engine.
-      operationId: getProcessDefinitionById
       produces:
         - application/json
       parameters:
@@ -9455,7 +9245,6 @@ paths:
         - Process Definition
       summary: Delete Process Definition.
       description: Delete Process Definition
-      operationId: deleteProcessDefinition
       produces:
         - application/json
       parameters:
@@ -9481,7 +9270,6 @@ paths:
         - Process Definition
       summary: Get Deployed Start Form.
       description: Get Deployed Start Form
-      operationId: getDeployedStartForm
       produces:
         - application/json
       parameters:
@@ -9499,7 +9287,6 @@ paths:
         - Process Definition
       summary: Retrieves the diagram of a process definition.
       description: Retrieves the diagram of a process definition.
-      operationId: getProcessDefinitionDiagram
       produces:
         - application/json
       parameters:
@@ -9530,7 +9317,6 @@ paths:
         variables take form data specified on the start event into account. If
         form fields are defined, the variable types and default values of the
         form fields are taken into account.
-      operationId: getFormVariables
       produces:
         - application/json
       parameters:
@@ -9569,7 +9355,6 @@ paths:
       description: >-
         Updates history time to live for process definition. The field is used
         within History cleanup.
-      operationId: updateHistoryTimeToLive
       consumes:
         - application/json
       produces:
@@ -9603,7 +9388,6 @@ paths:
       description: >-
         Retrieves the rendered form for a process definition. This method can be
         used for getting the HTML rendering of a Generated Task Form.
-      operationId: getRenderedForm
       produces:
         - application/xhtml+xml
       parameters:
@@ -9629,7 +9413,6 @@ paths:
         - Process Definition
       summary: Restart Process Instance.
       description: Restart Process Instance
-      operationId: restartProcessInstance
       consumes:
         - application/json
       produces:
@@ -9649,7 +9432,6 @@ paths:
         - Process Definition
       summary: Restart Process Instance Async.
       description: Restart Process Instance Async
-      operationId: restartProcessInstanceAsync
       consumes:
         - application/json
       produces:
@@ -9673,7 +9455,6 @@ paths:
       description: >-
         Instantiates a given process definition. Process variables and business
         key may be supplied in the request body.
-      operationId: startProcessInstance
       consumes:
         - application/json
       produces:
@@ -9717,7 +9498,6 @@ paths:
       description: >-
         Retrieves the key of the start form for a process definition. The form
         key corresponds to the `FormData#formKey` property in the engine.
-      operationId: getStartForm
       produces:
         - application/json
       parameters:
@@ -9753,7 +9533,6 @@ paths:
         number of incidents either grouped by incident types or for a specific
         incident type.
          Note: This does not include historic data.
-      operationId: getActivityStatistics
       produces:
         - application/json
       parameters:
@@ -9804,7 +9583,6 @@ paths:
         business key. If the start event has Form Field Metadata defined, the
         process engine will perform backend validation for any form fields which
         have validators defined. See Documentation on Generated Task Forms.
-      operationId: submitForm
       consumes:
         - application/json
       produces:
@@ -9852,7 +9630,6 @@ paths:
       description: >-
         Activates or suspends a given process definition by id or by latest
         version of process definition key.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -9887,7 +9664,6 @@ paths:
         - Process Definition
       summary: Retrieves the BPMN 2.
       description: Retrieves the BPMN 2.0 XML of a process definition.
-      operationId: getProcessDefinitionBpmn20Xml
       produces:
         - application/json
       parameters:
@@ -9915,7 +9691,6 @@ paths:
         may be static as well as dynamic runtime properties of process
         instances. The size of the result set can be retrieved by using the Get
         Instance Count method.
-      operationId: getProcessInstances
       produces:
         - application/json
       parameters:
@@ -10125,7 +9900,6 @@ paths:
         JSON object. This method is slightly more powerful than the Get
         Instances method because it allows filtering by multiple process
         variables of types `String`, `Number` or `Boolean`.
-      operationId: queryProcessInstances
       consumes:
         - application/json
       produces:
@@ -10172,7 +9946,6 @@ paths:
       description: >-
         Queries for the number of process instances that fulfill given
         parameters. Takes the same parameters as the Get Instances method.
-      operationId: getProcessInstancesCount
       produces:
         - application/json
       parameters:
@@ -10337,7 +10110,6 @@ paths:
         parameters. This method takes the same message body as the Get Instances
         (POST) and therefore it is slightly more powerful than the Get Instance
         Count method.
-      operationId: queryProcessInstancesCount
       consumes:
         - application/json
       produces:
@@ -10366,7 +10138,6 @@ paths:
         - Process Instance
       summary: Deletes multiple process instances asynchronously (batch).
       description: Deletes multiple process instances asynchronously (batch).
-      operationId: deleteAsync
       consumes:
         - application/json
       produces:
@@ -10398,7 +10169,6 @@ paths:
       description: >-
         Deletes a set of process instances asynchronously (batch) based on a
         historic process instance query.
-      operationId: deleteAsyncHistoricQueryBased
       consumes:
         - application/json
       produces:
@@ -10430,7 +10200,6 @@ paths:
       description: >-
         Create a batch to set retries of jobs associated with given processes
         asynchronously.
-      operationId: setRetriesByProcess
       consumes:
         - application/json
       produces:
@@ -10463,7 +10232,6 @@ paths:
       description: >-
         Create a batch to set retries of jobs asynchronously based on a historic
         process instance query.
-      operationId: setRetriesByProcessHistoricQueryBased
       consumes:
         - application/json
       produces:
@@ -10496,7 +10264,6 @@ paths:
       description: >-
         Activates or suspends process instances with the given process
         definition id.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -10522,7 +10289,6 @@ paths:
         - Process Instance
       summary: Update Suspension State Async.
       description: Update Suspension State Async
-      operationId: updateSuspensionStateAsync
       consumes:
         - application/json
       produces:
@@ -10542,7 +10308,6 @@ paths:
       description: >-
         Retrieves a process instance by id, according to the `ProcessInstance`
         interface in the engine.
-      operationId: getProcessInstance
       produces:
         - application/json
       parameters:
@@ -10563,7 +10328,6 @@ paths:
         - Process Instance
       summary: Deletes a running process instance by id.
       description: Deletes a running process instance by id.
-      operationId: deleteProcessInstance
       produces:
         - application/json
       parameters:
@@ -10607,7 +10371,6 @@ paths:
       description: >-
         Retrieves an Activity Instance (Tree) for a given process instance by
         id.
-      operationId: getActivityInstanceTree
       produces:
         - application/json
       parameters:
@@ -10647,7 +10410,6 @@ paths:
         instruction.
 
         The exact semantics of modification can be read about in the user guide.
-      operationId: modifyProcessInstance
       consumes:
         - application/json
       produces:
@@ -10679,7 +10441,6 @@ paths:
         - Process Instance
       summary: Activates or suspends a given process instance by id.
       description: Activates or suspends a given process instance by id.
-      operationId: updateSuspensionState
       consumes:
         - application/json
       produces:
@@ -10705,7 +10466,6 @@ paths:
         - Process Instance
       summary: Retrieves all variables of a given process instance by id.
       description: Retrieves all variables of a given process instance by id.
-      operationId: getVariablesResource
       produces:
         - application/json
       parameters:
@@ -10729,7 +10489,6 @@ paths:
         Updates or deletes the variables in the context of a case execution. The
         updates do not propagate upwards in the case execution hierarchy. Please
         note: deletion precedes update.
-      operationId: modifyVariables
       consumes:
         - application/json
       produces:
@@ -10767,7 +10526,6 @@ paths:
       description: >-
         Retrieves a variable from the context of a given case execution. Does
         not traverse the parent case execution hierarchy.
-      operationId: getVariable
       produces:
         - application/json
       parameters:
@@ -10803,7 +10561,6 @@ paths:
       description: >-
         Sets a variable in the context of a given case execution. Update does
         not propagate upwards in the case execution hierarchy.
-      operationId: putVariable
       consumes:
         - application/json
       produces:
@@ -10841,7 +10598,6 @@ paths:
       description: >-
         Deletes a variable in the context of a given case execution. Deletion
         does not propagate upwards in the case execution hierarchy.
-      operationId: deleteVariable
       produces:
         - application/json
       parameters:
@@ -10867,7 +10623,6 @@ paths:
         Retrieves a binary variable from the context of a given case execution.
         Does not traverse the parent case execution hierarchy. Applicable for
         byte array and file variables.
-      operationId: getVariableBinary
       produces:
         - application/json
       parameters:
@@ -10901,7 +10656,6 @@ paths:
       description: >-
         Sets the serialized value for a binary variable or the binary value for
         a file variable.
-      operationId: setBinaryVariable
       consumes:
         - multipart/form-data
       produces:
@@ -10942,7 +10696,6 @@ paths:
         an EL expression. These are disabled by default to prevent remote code
         execution. See the section on security considerations for custom code in
         the user guide for details.
-      operationId: getTasks
       produces:
         - application/json
         - application/hal+json
@@ -11230,7 +10983,6 @@ paths:
         `assigneeExpression`) for specifying an EL expression. These are
         disabled by default to prevent remote code execution. See the section on
         security considerations for custom code in the user guide for details.
-      operationId: queryTasks
       consumes:
         - application/json
       produces:
@@ -11279,7 +11031,6 @@ paths:
         for specifying an EL expression. These are disabled by default to
         prevent remote code execution. See the section on security
         considerations for custom code in the user guide for details.
-      operationId: getTasksCount
       produces:
         - application/json
       parameters:
@@ -11550,7 +11301,6 @@ paths:
         `assigneeExpression`) for specifying an EL expression. These are
         disabled by default to prevent remote code execution. See the section on
         security considerations for custom code in the user guide for details.
-      operationId: queryTasksCount
       consumes:
         - application/json
       produces:
@@ -11577,7 +11327,6 @@ paths:
         - Task
       summary: Creates a new task.
       description: Creates a new task.
-      operationId: createTask
       consumes:
         - application/json
       produces:
@@ -11602,7 +11351,6 @@ paths:
         - Task
       summary: Get Task Report Resource.
       description: Get Task Report Resource
-      operationId: getTaskReportResource
       produces:
         - application/json
       responses:
@@ -11614,7 +11362,6 @@ paths:
         - Task
       summary: Retrieves the number of tasks for each candidate group.
       description: Retrieves the number of tasks for each candidate group.
-      operationId: getTaskCountByCandidateGroupReport
       produces:
         - application/json
         - text/csv
@@ -11639,7 +11386,6 @@ paths:
         - Task
       summary: Retrieves a task by id.
       description: Retrieves a task by id.
-      operationId: getTask
       produces:
         - application/json
       parameters:
@@ -11660,7 +11406,6 @@ paths:
         - Task
       summary: Updates a task.
       description: Updates a task.
-      operationId: updateTask
       consumes:
         - application/json
       produces:
@@ -11691,7 +11436,6 @@ paths:
         - Task
       summary: Delete Task.
       description: Delete Task
-      operationId: deleteTask
       produces:
         - application/json
       parameters:
@@ -11716,7 +11460,6 @@ paths:
         Changes the assignee of a task to a specific user.Note: The difference
         with the Claim Task method is that this method does not check if the
         task already has a user assigned to it.
-      operationId: setAssignee
       consumes:
         - application/json
       produces:
@@ -11746,7 +11489,6 @@ paths:
         - Task
       summary: Gets the attachments for a task.
       description: Gets the attachments for a task.
-      operationId: getAttachmentResource
       produces:
         - application/json
       parameters:
@@ -11768,7 +11510,6 @@ paths:
         - Task
       summary: Creates an attachment for a task.
       description: Creates an attachment for a task.
-      operationId: addAttachment
       consumes:
         - multipart/form-data
       produces:
@@ -11796,7 +11537,6 @@ paths:
         - Task
       summary: Retrieves a task attachment by task id and attachment id.
       description: Retrieves a task attachment by task id and attachment id.
-      operationId: getAttachment
       produces:
         - application/json
       parameters:
@@ -11825,7 +11565,6 @@ paths:
         - Task
       summary: Removes an attachment from a task by id.
       description: Removes an attachment from a task by id.
-      operationId: deleteAttachment
       produces:
         - application/json
       parameters:
@@ -11860,7 +11599,6 @@ paths:
       description: >-
         Retrieves the binary content of a task attachment by task id and
         attachment id.
-      operationId: getAttachmentData
       produces:
         - application/octet-stream
       parameters:
@@ -11893,7 +11631,6 @@ paths:
         Claims a task for a specific user.Note: The difference with the Set
         Assignee method is that here a check is performed to see if the task
         already has a user assigned to it.
-      operationId: claim
       consumes:
         - application/json
       produces:
@@ -11923,7 +11660,6 @@ paths:
         - Task
       summary: Gets the comments for a task by id.
       description: Gets the comments for a task by id.
-      operationId: getTaskCommentResource
       produces:
         - application/json
       parameters:
@@ -11945,7 +11681,6 @@ paths:
         - Task
       summary: Creates a comment for a task by id.
       description: Creates a comment for a task by id.
-      operationId: createComment
       consumes:
         - application/json
       produces:
@@ -11981,7 +11716,6 @@ paths:
         - Task
       summary: Retrieves a task comment by task id and comment id.
       description: Retrieves a task comment by task id and comment id.
-      operationId: getComment
       produces:
         - application/json
       parameters:
@@ -12011,7 +11745,6 @@ paths:
         - Task
       summary: Completes a task and updates process variables.
       description: Completes a task and updates process variables.
-      operationId: complete
       consumes:
         - application/json
       produces:
@@ -12048,7 +11781,6 @@ paths:
         - Task
       summary: Delegates a task to another user.
       description: Delegates a task to another user.
-      operationId: delegate
       consumes:
         - application/json
       produces:
@@ -12078,7 +11810,6 @@ paths:
         - Task
       summary: Get Deployed Form.
       description: Get Deployed Form
-      operationId: getDeployedForm
       produces:
         - application/json
       parameters:
@@ -12100,7 +11831,6 @@ paths:
         `FormData#formKey` property in the engine. This key can be used to do
         task-specific form rendering in client applications. Additionally, the
         context path of the containing process application is returned.
-      operationId: getForm
       produces:
         - application/json
       parameters:
@@ -12131,7 +11861,6 @@ paths:
         specified on the task into account. If form fields are defined, the
         variable types and default values of the form fields are taken into
         account.
-      operationId: getFormVariables
       produces:
         - application/json
       parameters:
@@ -12172,7 +11901,6 @@ paths:
       description: >-
         Gets the identity links for a task by id, which are the users and groups
         that are in some relation to it (including assignee and owner).
-      operationId: getIdentityLinks
       produces:
         - application/json
       parameters:
@@ -12204,7 +11932,6 @@ paths:
       description: >-
         Adds an identity link to a task by id. Can be used to link any user or
         group to a task and specify a relation.
-      operationId: addIdentityLink
       consumes:
         - application/json
       produces:
@@ -12234,7 +11961,6 @@ paths:
         - Task
       summary: Removes an identity link from a task by id.
       description: Removes an identity link from a task by id.
-      operationId: deleteIdentityLink
       consumes:
         - application/json
       produces:
@@ -12264,7 +11990,6 @@ paths:
         - Task
       summary: Retrieves all variables of a given task by id.
       description: Retrieves all variables of a given task by id.
-      operationId: getLocalVariables
       produces:
         - application/json
       parameters:
@@ -12288,7 +12013,6 @@ paths:
         Updates or deletes the variables in the context of a case execution. The
         updates do not propagate upwards in the case execution hierarchy. Please
         note: deletion precedes update.
-      operationId: modifyVariables
       consumes:
         - application/json
       produces:
@@ -12326,7 +12050,6 @@ paths:
       description: >-
         Retrieves a variable from the context of a given case execution. Does
         not traverse the parent case execution hierarchy.
-      operationId: getVariable
       produces:
         - application/json
       parameters:
@@ -12362,7 +12085,6 @@ paths:
       description: >-
         Sets a variable in the context of a given case execution. Update does
         not propagate upwards in the case execution hierarchy.
-      operationId: putVariable
       consumes:
         - application/json
       produces:
@@ -12400,7 +12122,6 @@ paths:
       description: >-
         Deletes a variable in the context of a given case execution. Deletion
         does not propagate upwards in the case execution hierarchy.
-      operationId: deleteVariable
       produces:
         - application/json
       parameters:
@@ -12426,7 +12147,6 @@ paths:
         Retrieves a binary variable from the context of a given case execution.
         Does not traverse the parent case execution hierarchy. Applicable for
         byte array and file variables.
-      operationId: getVariableBinary
       produces:
         - application/json
       parameters:
@@ -12460,7 +12180,6 @@ paths:
       description: >-
         Sets the serialized value for a binary variable or the binary value for
         a file variable.
-      operationId: setBinaryVariable
       consumes:
         - multipart/form-data
       produces:
@@ -12497,7 +12216,6 @@ paths:
       description: >-
         Retrieves the rendered form for a task. This method can be used to get
         the HTML rendering of a Generated Task Form.
-      operationId: getRenderedForm
       produces:
         - application/xhtml+xml
       parameters:
@@ -12520,7 +12238,6 @@ paths:
         - Task
       summary: Resolves a task and updates execution variables.
       description: Resolves a task and updates execution variables.
-      operationId: resolve
       consumes:
         - application/json
       produces:
@@ -12566,7 +12283,6 @@ paths:
         perform backend validation for any form fields which have validators
         defined. See the [Generated Task Forms]() section of the [User Guide]()
         for more information.
-      operationId: submit
       consumes:
         - application/json
       produces:
@@ -12605,7 +12321,6 @@ paths:
       description: >-
         Resets a task's assignee. If successful, the task is not assigned to a
         user.
-      operationId: unclaim
       produces:
         - application/json
       parameters:
@@ -12630,7 +12345,6 @@ paths:
         Retrieves all variables visible from the task. A variable is visible
         from the task if it is a local task variable or declared in a parent
         scope of the task. See documentation on visiblity of variables.
-      operationId: getVariables
       produces:
         - application/json
       parameters:
@@ -12654,7 +12368,6 @@ paths:
         Updates or deletes the variables in the context of a case execution. The
         updates do not propagate upwards in the case execution hierarchy. Please
         note: deletion precedes update.
-      operationId: modifyVariables
       consumes:
         - application/json
       produces:
@@ -12692,7 +12405,6 @@ paths:
       description: >-
         Retrieves a variable from the context of a given case execution. Does
         not traverse the parent case execution hierarchy.
-      operationId: getVariable
       produces:
         - application/json
       parameters:
@@ -12728,7 +12440,6 @@ paths:
       description: >-
         Sets a variable in the context of a given case execution. Update does
         not propagate upwards in the case execution hierarchy.
-      operationId: putVariable
       consumes:
         - application/json
       produces:
@@ -12766,7 +12477,6 @@ paths:
       description: >-
         Deletes a variable in the context of a given case execution. Deletion
         does not propagate upwards in the case execution hierarchy.
-      operationId: deleteVariable
       produces:
         - application/json
       parameters:
@@ -12792,7 +12502,6 @@ paths:
         Retrieves a binary variable from the context of a given case execution.
         Does not traverse the parent case execution hierarchy. Applicable for
         byte array and file variables.
-      operationId: getVariableBinary
       produces:
         - application/json
       parameters:
@@ -12826,7 +12535,6 @@ paths:
       description: >-
         Sets the serialized value for a binary variable or the binary value for
         a file variable.
-      operationId: setBinaryVariable
       consumes:
         - multipart/form-data
       produces:
@@ -12863,7 +12571,6 @@ paths:
       description: >-
         Query for a list of tenants using a list of parameters. The size of the
         result set can be retrieved by using the Get Tenant Count method.
-      operationId: queryTenants
       produces:
         - application/json
       parameters:
@@ -12968,7 +12675,6 @@ paths:
         the user can perform an operation or not may depend on various things,
         including the users authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       responses:
@@ -12982,7 +12688,6 @@ paths:
         - Tenant
       summary: Query for tenants using a list of parameters and retrieves the count.
       description: Query for tenants using a list of parameters and retrieves the count.
-      operationId: getTenantCount
       produces:
         - application/json
       parameters:
@@ -13034,7 +12739,6 @@ paths:
         - Tenant
       summary: Create a new tenant.
       description: Create a new tenant.
-      operationId: createTenant
       consumes:
         - application/json
       produces:
@@ -13061,7 +12765,6 @@ paths:
         - Tenant
       summary: Retrieves a tenant.
       description: Retrieves a tenant.
-      operationId: getTenant
       produces:
         - application/json
       parameters:
@@ -13082,7 +12785,6 @@ paths:
         - Tenant
       summary: Updates a given tenant.
       description: Updates a given tenant.
-      operationId: updateTenant
       consumes:
         - application/json
       produces:
@@ -13115,7 +12817,6 @@ paths:
         - Tenant
       summary: Deletes a tenant by id.
       description: Deletes a tenant by id.
-      operationId: deleteTenant
       produces:
         - application/json
       parameters:
@@ -13147,7 +12848,6 @@ paths:
         the user can perform an operation or not may depend on various things,
         including the users authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       parameters:
@@ -13167,7 +12867,6 @@ paths:
         - Tenant
       summary: Get Tenant Group Members Resource.
       description: Get Tenant Group Members Resource
-      operationId: getTenantGroupMembersResource
       produces:
         - application/json
       parameters:
@@ -13191,7 +12890,6 @@ paths:
         the user can perform an operation or not may depend on various things,
         including the users authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       parameters:
@@ -13211,7 +12909,6 @@ paths:
         - Tenant
       summary: Creates a membership between a tenant and a group.
       description: Creates a membership between a tenant and a group.
-      operationId: createMembership
       produces:
         - application/json
       parameters:
@@ -13239,7 +12936,6 @@ paths:
         - Tenant
       summary: Deletes a membership between a tenant and a group.
       description: Deletes a membership between a tenant and a group.
-      operationId: deleteMembership
       produces:
         - application/json
       parameters:
@@ -13268,7 +12964,6 @@ paths:
         - Tenant
       summary: Get Tenant User Members Resource.
       description: Get Tenant User Members Resource
-      operationId: getTenantUserMembersResource
       produces:
         - application/json
       parameters:
@@ -13292,7 +12987,6 @@ paths:
         the user can perform an operation or not may depend on various things,
         including the users authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       parameters:
@@ -13312,7 +13006,6 @@ paths:
         - Tenant
       summary: Creates a membership between a tenant and an user.
       description: Creates a membership between a tenant and an user.
-      operationId: createMembership
       produces:
         - application/json
       parameters:
@@ -13340,7 +13033,6 @@ paths:
         - Tenant
       summary: Deletes a membership between a tenant and an user.
       description: Deletes a membership between a tenant and an user.
-      operationId: deleteMembership
       produces:
         - application/json
       parameters:
@@ -13371,7 +13063,6 @@ paths:
       description: >-
         Query for a list of users using a list of parameters. The size of the
         result set can be retrieved by using the Get User Count method.
-      operationId: queryUsers
       produces:
         - application/json
       parameters:
@@ -13488,7 +13179,6 @@ paths:
         user can perform an operation or not may depend on various things,
         including the user's authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       responses:
@@ -13502,7 +13192,6 @@ paths:
         - User
       summary: Query for users using a list of parameters and retrieves the count.
       description: Query for users using a list of parameters and retrieves the count.
-      operationId: getUserCount
       produces:
         - application/json
       parameters:
@@ -13567,7 +13256,6 @@ paths:
         - User
       summary: Create a new user.
       description: Create a new user.
-      operationId: createUser
       consumes:
         - '*/*'
       produces:
@@ -13596,7 +13284,6 @@ paths:
         - User
       summary: Get User.
       description: Get User
-      operationId: getUser
       produces:
         - application/json
       parameters:
@@ -13612,7 +13299,6 @@ paths:
         - User
       summary: Deletes a user by id.
       description: Deletes a user by id.
-      operationId: deleteUser
       produces:
         - application/json
       parameters:
@@ -13645,7 +13331,6 @@ paths:
         user can perform an operation or not may depend on various things,
         including the user's authorizations to interact with this resource and
         the internal context of the process engine.
-      operationId: availableOperations
       produces:
         - application/json
       parameters:
@@ -13664,7 +13349,6 @@ paths:
         - User
       summary: Updates a user's credentials (password).
       description: Updates a user's credentials (password).
-      operationId: updateCredentials
       consumes:
         - application/json
       produces:
@@ -13701,7 +13385,6 @@ paths:
         - User
       summary: Retrieves a user's profile.
       description: Retrieves a user's profile.
-      operationId: getUserProfile
       produces:
         - application/json
       parameters:
@@ -13723,7 +13406,6 @@ paths:
         - User
       summary: Updates the profile information of an already existing user.
       description: Updates the profile information of an already existing user.
-      operationId: updateProfile
       consumes:
         - application/json
       produces:
@@ -13762,7 +13444,6 @@ paths:
         may be the properties of variable instances, such as the name or type.
         The size of the result set can be retrieved by using the Get Variable
         Instance Count method.
-      operationId: getVariableInstances
       produces:
         - application/json
       parameters:
@@ -13918,7 +13599,6 @@ paths:
         JSON object. This method is slightly more powerful than the Get Variable
         Instances method because it allows filtering by multiple variable
         instances of types `String`, `Number` or `Boolean`.
-      operationId: queryVariableInstances
       consumes:
         - application/json
       produces:
@@ -13972,7 +13652,6 @@ paths:
         Query for the number of variable instances that fulfill given
         parameters. Takes the same parameters as the Get Variable Instances
         method.
-      operationId: getVariableInstancesCount
       produces:
         - application/json
       parameters:
@@ -14104,7 +13783,6 @@ paths:
         parameters. This method takes the same message body as the Get Variable
         Instances (POST) method and therefore it is slightly more powerful than
         the Get Variable Instance Count method.
-      operationId: queryVariableInstancesCount
       consumes:
         - application/json
       produces:
@@ -14133,7 +13811,6 @@ paths:
         - Variable
       summary: Retrieves a variable by id.
       description: Retrieves a variable by id.
-      operationId: getVariableInstance
       produces:
         - application/json
       parameters:
@@ -14157,7 +13834,6 @@ paths:
       description: >-
         Retrieves the content of a variable by id. Applicable for byte array and
         file variables.
-      operationId: getResourceBinary
       produces:
         - application/json
       parameters:

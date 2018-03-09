@@ -90,7 +90,6 @@
         ],
         "summary": "Queries for a list of authorizations using a list of parameters.",
         "description": "Queries for a list of authorizations using a list of parameters. The size of the result set can be retrieved by using the Get Authorization Count method.",
-        "operationId": "queryAuthorizations",
         "produces": [
           "application/json"
         ],
@@ -203,7 +202,6 @@
         ],
         "summary": "The `/authorization` resource supports two custom OPTIONS requests, one for the resource as such and one for individual authorization instances.",
         "description": "The `/authorization` resource supports two custom OPTIONS requests, one for the resource as such and one for individual authorization instances. The OPTIONS request allows you to check for the set of available operations that the currently authenticated user can perform on the `/authorization` resource. Whether the user can perform an operation or not may depend on various factors, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -224,7 +222,6 @@
         ],
         "summary": "Performs an authorization check for the currently authenticated user.",
         "description": "Performs an authorization check for the currently authenticated user.",
-        "operationId": "isUserAuthorized",
         "produces": [
           "application/json"
         ],
@@ -279,7 +276,6 @@
         ],
         "summary": "Queries for authorizations using a list of parameters and retrieves the count.",
         "description": "Queries for authorizations using a list of parameters and retrieves the count.",
-        "operationId": "getAuthorizationCount",
         "produces": [
           "application/json"
         ],
@@ -347,7 +343,6 @@
         ],
         "summary": "Creates a new authorization.",
         "description": "Creates a new authorization.",
-        "operationId": "createAuthorization",
         "consumes": [
           "application/json"
         ],
@@ -388,7 +383,6 @@
         ],
         "summary": "Retrieves an authorization by id.",
         "description": "Retrieves an authorization by id.",
-        "operationId": "getAuthorization",
         "produces": [
           "application/json"
         ],
@@ -416,7 +410,6 @@
         ],
         "summary": "Updates an authorization by id.",
         "description": "Updates an authorization by id.",
-        "operationId": "updateAuthorization",
         "consumes": [
           "application/json"
         ],
@@ -462,7 +455,6 @@
         ],
         "summary": "Deletes an authorization by id.",
         "description": "Deletes an authorization by id.",
-        "operationId": "deleteAuthorization",
         "produces": [
           "application/json"
         ],
@@ -493,7 +485,6 @@
         ],
         "summary": "The `/authorization` resource supports two custom OPTIONS requests, one for the resource as such and one for individual authorization instances.",
         "description": "The `/authorization` resource supports two custom OPTIONS requests, one for the resource as such and one for individual authorization instances. The OPTIONS request allows you to check for the set of available operations that the currently authenticated user can perform on the `/authorization` resource. Whether the user can perform an operation or not may depend on various factors, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -523,7 +514,6 @@
         ],
         "summary": "Queries for batches that fulfill given parameters.",
         "description": "Queries for batches that fulfill given parameters. Parameters may be the properties of batches, such as the id or type.  The size of the result set can be retrieved by using the Get Batch Count method.",
-        "operationId": "getBatches",
         "produces": [
           "application/json"
         ],
@@ -628,7 +618,6 @@
         ],
         "summary": "Requests the number of batches that fulfill the query criteria.",
         "description": "Requests the number of batches that fulfill the query criteria. Takes the same filtering parameters as the Get Batches method.",
-        "operationId": "getBatchesCount",
         "produces": [
           "application/json"
         ],
@@ -686,7 +675,6 @@
         ],
         "summary": "Queries for batch statistics that fulfill given parameters.",
         "description": "Queries for batch statistics that fulfill given parameters. Parameters may be the properties of batches, such as the id or type.  The size of the result set can be retrieved by using the Get Batch Statistics Count method.",
-        "operationId": "getStatistics",
         "produces": [
           "application/json"
         ],
@@ -791,7 +779,6 @@
         ],
         "summary": "Requests the number of batch statistics that fulfill the query criteria.",
         "description": "Requests the number of batch statistics that fulfill the query criteria.  Takes the same filtering parameters as the Get Batch Statistics method.",
-        "operationId": "getStatisticsCount",
         "produces": [
           "application/json"
         ],
@@ -849,7 +836,6 @@
         ],
         "summary": "Retrieves a batch by id, according to the `Batch` interface in the engine.",
         "description": "Retrieves a batch by id, according to the `Batch` interface in the engine.",
-        "operationId": "getBatch",
         "parameters": [
           {
             "name": "id",
@@ -871,7 +857,6 @@
         ],
         "summary": "Deletes a batch by id, including all related jobs and job definitions.",
         "description": "Deletes a batch by id, including all related jobs and job definitions. Optionally also deletes the batch history.",
-        "operationId": "deleteBatch",
         "parameters": [
           {
             "name": "cascade",
@@ -905,7 +890,6 @@
         ],
         "summary": "Activates or suspends a batch by id.",
         "description": "Activates or suspends a batch by id.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -944,7 +928,6 @@
         ],
         "summary": "Queries for case definitions that fulfill given parameters.",
         "description": "Queries for case definitions that fulfill given parameters. Parameters may be the properties of case definitions, such as the name, key or version. The size of the result set can be retrieved by using the Get Case Definition Count method.",
-        "operationId": "getCaseDefinitions",
         "produces": [
           "application/json"
         ],
@@ -1129,7 +1112,6 @@
         ],
         "summary": "Requests the number of case definitions that fulfill the query criteria.",
         "description": "Requests the number of case definitions that fulfill the query criteria. Takes the same filtering parameters as the Get Case Definitions method.",
-        "operationId": "getCaseDefinitionsCount",
         "produces": [
           "application/json"
         ],
@@ -1267,7 +1249,6 @@
         ],
         "summary": "Retrieves a case definition according to the `CaseDefinition` interface in the engine.",
         "description": "Retrieves a case definition according to the `CaseDefinition` interface in the engine.",
-        "operationId": "getCaseDefinitionByKey",
         "produces": [
           "application/json"
         ],
@@ -1297,7 +1278,6 @@
         ],
         "summary": "Instantiates a given case definition.",
         "description": "Instantiates a given case definition. Case variables and business key may be supplied in the request body.",
-        "operationId": "createCaseInstance",
         "consumes": [
           "application/json"
         ],
@@ -1351,7 +1331,6 @@
         ],
         "summary": "Retrieves the diagram of a case definition.",
         "description": "Retrieves the diagram of a case definition.",
-        "operationId": "getCaseDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -1384,7 +1363,6 @@
         ],
         "summary": "Updates history time to live for case definition with given id.",
         "description": "Updates history time to live for case definition with given id. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -1429,7 +1407,6 @@
         ],
         "summary": "Retrieves a case definition according to the `CaseDefinition` interface in the engine.",
         "description": "Retrieves a case definition according to the `CaseDefinition` interface in the engine.",
-        "operationId": "getCaseDefinitionByKeyAndTenantId",
         "produces": [
           "application/json"
         ],
@@ -1466,7 +1443,6 @@
         ],
         "summary": "Instantiates a given case definition.",
         "description": "Instantiates a given case definition. Case variables and business key may be supplied in the request body.",
-        "operationId": "createCaseInstance",
         "consumes": [
           "application/json"
         ],
@@ -1527,7 +1503,6 @@
         ],
         "summary": "Retrieves the diagram of a case definition.",
         "description": "Retrieves the diagram of a case definition.",
-        "operationId": "getCaseDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -1567,7 +1542,6 @@
         ],
         "summary": "Updates history time to live for case definition with given id.",
         "description": "Updates history time to live for case definition with given id. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -1619,7 +1593,6 @@
         ],
         "summary": "Retrieves the CMMN XML of a case definition.",
         "description": "Retrieves the CMMN XML of a case definition.",
-        "operationId": "getCaseDefinitionCmmnXml",
         "produces": [
           "application/json"
         ],
@@ -1659,7 +1632,6 @@
         ],
         "summary": "Retrieves the CMMN XML of a case definition.",
         "description": "Retrieves the CMMN XML of a case definition.",
-        "operationId": "getCaseDefinitionCmmnXml",
         "produces": [
           "application/json"
         ],
@@ -1692,7 +1664,6 @@
         ],
         "summary": "Retrieves a case definition according to the `CaseDefinition` interface in the engine.",
         "description": "Retrieves a case definition according to the `CaseDefinition` interface in the engine.",
-        "operationId": "getCaseDefinitionById",
         "produces": [
           "application/json"
         ],
@@ -1722,7 +1693,6 @@
         ],
         "summary": "Instantiates a given case definition.",
         "description": "Instantiates a given case definition. Case variables and business key may be supplied in the request body.",
-        "operationId": "createCaseInstance",
         "consumes": [
           "application/json"
         ],
@@ -1776,7 +1746,6 @@
         ],
         "summary": "Retrieves the diagram of a case definition.",
         "description": "Retrieves the diagram of a case definition.",
-        "operationId": "getCaseDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -1809,7 +1778,6 @@
         ],
         "summary": "Updates history time to live for case definition with given id.",
         "description": "Updates history time to live for case definition with given id. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -1854,7 +1822,6 @@
         ],
         "summary": "Retrieves the CMMN XML of a case definition.",
         "description": "Retrieves the CMMN XML of a case definition.",
-        "operationId": "getCaseDefinitionCmmnXml",
         "produces": [
           "application/json"
         ],
@@ -1887,7 +1854,6 @@
         ],
         "summary": "Queries for case executions that fulfill given parameters.",
         "description": "Queries for case executions that fulfill given parameters. Parameters may be static as well as dynamic runtime properties of case executions. The size of the result set can be retrieved by using the Get Case Execution Count method.",
-        "operationId": "getCaseExecutions",
         "produces": [
           "application/json"
         ],
@@ -2063,7 +2029,6 @@
         ],
         "summary": "Queries for case executions that fulfill given parameters through a JSON object.",
         "description": "Queries for case executions that fulfill given parameters through a JSON object. This method is slightly more powerful than the Get Case Executions method because it allows filtering by multiple case variables of types `String`, `Number` or `Boolean`.",
-        "operationId": "queryCaseExecutions",
         "consumes": [
           "application/json"
         ],
@@ -2120,7 +2085,6 @@
         ],
         "summary": "Queries for the number of case executions that fulfill given parameters.",
         "description": "Queries for the number of case executions that fulfill given parameters. Takes the same parameters as the Get Case Executions method.",
-        "operationId": "getCaseExecutionsCount",
         "produces": [
           "application/json"
         ],
@@ -2249,7 +2213,6 @@
         ],
         "summary": "Query Case Executions Count.",
         "description": "Query Case Executions Count",
-        "operationId": "queryCaseExecutionsCount",
         "consumes": [
           "application/json"
         ],
@@ -2273,7 +2236,6 @@
         ],
         "summary": "Retrieves a case execution by id, according to the `CaseExecution` interface in the engine.",
         "description": "Retrieves a case execution by id, according to the `CaseExecution` interface in the engine.",
-        "operationId": "getCaseExecution",
         "produces": [
           "application/json"
         ],
@@ -2303,7 +2265,6 @@
         ],
         "summary": "title: \"Complete Case Execution\" weight: 70.",
         "description": "title: \"Complete Case Execution\" weight: 70",
-        "operationId": "complete",
         "consumes": [
           "application/json"
         ],
@@ -2351,7 +2312,6 @@
         ],
         "summary": "Performs a transition from ENABLED state to DISABLED state.",
         "description": "Performs a transition from ENABLED state to DISABLED state. In relation to the state transition, it is possible to update or delete case instance variables (please note: deletion precedes update).",
-        "operationId": "disable",
         "consumes": [
           "application/json"
         ],
@@ -2399,7 +2359,6 @@
         ],
         "summary": "Retrieves all variables of a given case execution.",
         "description": "Retrieves all variables of a given case execution.",
-        "operationId": "getVariablesLocal",
         "produces": [
           "application/json"
         ],
@@ -2427,7 +2386,6 @@
         ],
         "summary": "Updates or deletes the variables in the context of a case execution.",
         "description": "Updates or deletes the variables in the context of a case execution. The updates do not propagate upwards in the case execution hierarchy. Please note: deletion precedes update.",
-        "operationId": "modifyVariables",
         "consumes": [
           "application/json"
         ],
@@ -2472,7 +2430,6 @@
         ],
         "summary": "Retrieves a variable from the context of a given case execution.",
         "description": "Retrieves a variable from the context of a given case execution. Does not traverse the parent case execution hierarchy.",
-        "operationId": "getVariable",
         "produces": [
           "application/json"
         ],
@@ -2518,7 +2475,6 @@
         ],
         "summary": "Sets a variable in the context of a given case execution.",
         "description": "Sets a variable in the context of a given case execution. Update does not propagate upwards in the case execution hierarchy.",
-        "operationId": "putVariable",
         "consumes": [
           "application/json"
         ],
@@ -2565,7 +2521,6 @@
         ],
         "summary": "Deletes a variable in the context of a given case execution.",
         "description": "Deletes a variable in the context of a given case execution. Deletion does not propagate upwards in the case execution hierarchy.",
-        "operationId": "deleteVariable",
         "produces": [
           "application/json"
         ],
@@ -2599,7 +2554,6 @@
         ],
         "summary": "Retrieves a binary variable from the context of a given case execution.",
         "description": "Retrieves a binary variable from the context of a given case execution. Does not traverse the parent case execution hierarchy. Applicable for byte array and file variables.",
-        "operationId": "getVariableBinary",
         "produces": [
           "application/json"
         ],
@@ -2637,7 +2591,6 @@
         ],
         "summary": "Sets the serialized value for a binary variable or the binary value for a file variable.",
         "description": "Sets the serialized value for a binary variable or the binary value for a file variable.",
-        "operationId": "setBinaryVariable",
         "consumes": [
           "multipart/form-data"
         ],
@@ -2686,7 +2639,6 @@
         ],
         "summary": "Performs a transition from ENABLED state to ACTIVE state.",
         "description": "Performs a transition from ENABLED state to ACTIVE state. In relation to the state transition, it is possible to update or delete case instance variables (please note: deletion precedes update).",
-        "operationId": "manualStart",
         "consumes": [
           "application/json"
         ],
@@ -2734,7 +2686,6 @@
         ],
         "summary": "Performs a transition from DISABLED state to ENABLED state.",
         "description": "Performs a transition from DISABLED state to ENABLED state. In relation to the state transition, it is possible to update or delete case instance variables (please note: deletion precedes update).",
-        "operationId": "reenable",
         "consumes": [
           "application/json"
         ],
@@ -2782,7 +2733,6 @@
         ],
         "summary": "title: \"Terminate Case Execution\" weight: 90.",
         "description": "title: \"Terminate Case Execution\" weight: 90",
-        "operationId": "terminate",
         "consumes": [
           "application/json"
         ],
@@ -2830,7 +2780,6 @@
         ],
         "summary": "Retrieves all variables of a given case execution by id.",
         "description": "Retrieves all variables of a given case execution by id.",
-        "operationId": "getVariables",
         "produces": [
           "application/json"
         ],
@@ -2858,7 +2807,6 @@
         ],
         "summary": "Updates or deletes the variables in the context of a case execution.",
         "description": "Updates or deletes the variables in the context of a case execution. The updates do not propagate upwards in the case execution hierarchy. Please note: deletion precedes update.",
-        "operationId": "modifyVariables",
         "consumes": [
           "application/json"
         ],
@@ -2903,7 +2851,6 @@
         ],
         "summary": "Retrieves a variable from the context of a given case execution.",
         "description": "Retrieves a variable from the context of a given case execution. Does not traverse the parent case execution hierarchy.",
-        "operationId": "getVariable",
         "produces": [
           "application/json"
         ],
@@ -2949,7 +2896,6 @@
         ],
         "summary": "Sets a variable in the context of a given case execution.",
         "description": "Sets a variable in the context of a given case execution. Update does not propagate upwards in the case execution hierarchy.",
-        "operationId": "putVariable",
         "consumes": [
           "application/json"
         ],
@@ -2996,7 +2942,6 @@
         ],
         "summary": "Deletes a variable in the context of a given case execution.",
         "description": "Deletes a variable in the context of a given case execution. Deletion does not propagate upwards in the case execution hierarchy.",
-        "operationId": "deleteVariable",
         "produces": [
           "application/json"
         ],
@@ -3030,7 +2975,6 @@
         ],
         "summary": "Retrieves a binary variable from the context of a given case execution.",
         "description": "Retrieves a binary variable from the context of a given case execution. Does not traverse the parent case execution hierarchy. Applicable for byte array and file variables.",
-        "operationId": "getVariableBinary",
         "produces": [
           "application/json"
         ],
@@ -3068,7 +3012,6 @@
         ],
         "summary": "Sets the serialized value for a binary variable or the binary value for a file variable.",
         "description": "Sets the serialized value for a binary variable or the binary value for a file variable.",
-        "operationId": "setBinaryVariable",
         "consumes": [
           "multipart/form-data"
         ],
@@ -3117,7 +3060,6 @@
         ],
         "summary": "Queries for decision definitions that fulfill given parameters.",
         "description": "Queries for decision definitions that fulfill given parameters. Parameters may be the properties of decision definitions, such as the name, key or version.  The size of the result set can be retrieved by using the Get Decision Definition Count method.",
-        "operationId": "getDecisionDefinitions",
         "produces": [
           "application/json"
         ],
@@ -3320,7 +3262,6 @@
         ],
         "summary": "Requests the number of decision definitions that fulfill the query criteria.",
         "description": "Requests the number of decision definitions that fulfill the query criteria. Takes the same filtering parameters as the Get Decision Definitions method.",
-        "operationId": "getDecisionDefinitionsCount",
         "produces": [
           "application/json"
         ],
@@ -3476,7 +3417,6 @@
         ],
         "summary": "Retrieves a decision definition by id, according to the `DecisionDefinition` interface in the engine.",
         "description": "Retrieves a decision definition by id, according to the `DecisionDefinition` interface in the engine.",
-        "operationId": "getDecisionDefinitionByKey",
         "produces": [
           "application/json"
         ],
@@ -3503,7 +3443,6 @@
         ],
         "summary": "Retrieves the diagram of a decision definition.",
         "description": "Retrieves the diagram of a decision definition.",
-        "operationId": "getDecisionDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -3530,7 +3469,6 @@
         ],
         "summary": "Evaluates a given decision and returns the result.",
         "description": "Evaluates a given decision and returns the result. The input values of the decision have to be supplied in the request body.",
-        "operationId": "evaluateDecision",
         "consumes": [
           "application/json"
         ],
@@ -3575,7 +3513,6 @@
         ],
         "summary": "Updates history time to live for decision definition.",
         "description": "Updates history time to live for decision definition. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -3620,7 +3557,6 @@
         ],
         "summary": "Retrieves a decision definition by id, according to the `DecisionDefinition` interface in the engine.",
         "description": "Retrieves a decision definition by id, according to the `DecisionDefinition` interface in the engine.",
-        "operationId": "getDecisionDefinitionByKeyAndTenantId",
         "produces": [
           "application/json"
         ],
@@ -3654,7 +3590,6 @@
         ],
         "summary": "Retrieves the diagram of a decision definition.",
         "description": "Retrieves the diagram of a decision definition.",
-        "operationId": "getDecisionDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -3688,7 +3623,6 @@
         ],
         "summary": "Evaluates a given decision and returns the result.",
         "description": "Evaluates a given decision and returns the result. The input values of the decision have to be supplied in the request body.",
-        "operationId": "evaluateDecision",
         "consumes": [
           "application/json"
         ],
@@ -3740,7 +3674,6 @@
         ],
         "summary": "Updates history time to live for decision definition.",
         "description": "Updates history time to live for decision definition. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -3792,7 +3725,6 @@
         ],
         "summary": "Retrieves the DMN XML of a decision definition.",
         "description": "Retrieves the DMN XML of a decision definition.",
-        "operationId": "getDecisionDefinitionDmnXml",
         "produces": [
           "application/json"
         ],
@@ -3829,7 +3761,6 @@
         ],
         "summary": "Retrieves the DMN XML of a decision definition.",
         "description": "Retrieves the DMN XML of a decision definition.",
-        "operationId": "getDecisionDefinitionDmnXml",
         "produces": [
           "application/json"
         ],
@@ -3859,7 +3790,6 @@
         ],
         "summary": "Retrieves a decision definition by id, according to the `DecisionDefinition` interface in the engine.",
         "description": "Retrieves a decision definition by id, according to the `DecisionDefinition` interface in the engine.",
-        "operationId": "getDecisionDefinitionById",
         "produces": [
           "application/json"
         ],
@@ -3886,7 +3816,6 @@
         ],
         "summary": "Retrieves the diagram of a decision definition.",
         "description": "Retrieves the diagram of a decision definition.",
-        "operationId": "getDecisionDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -3913,7 +3842,6 @@
         ],
         "summary": "Evaluates a given decision and returns the result.",
         "description": "Evaluates a given decision and returns the result. The input values of the decision have to be supplied in the request body.",
-        "operationId": "evaluateDecision",
         "consumes": [
           "application/json"
         ],
@@ -3958,7 +3886,6 @@
         ],
         "summary": "Updates history time to live for decision definition.",
         "description": "Updates history time to live for decision definition. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -4003,7 +3930,6 @@
         ],
         "summary": "Retrieves the DMN XML of a decision definition.",
         "description": "Retrieves the DMN XML of a decision definition.",
-        "operationId": "getDecisionDefinitionDmnXml",
         "produces": [
           "application/json"
         ],
@@ -4033,7 +3959,6 @@
         ],
         "summary": "Queries for deployments that fulfill given parameters.",
         "description": "Queries for deployments that fulfill given parameters. Parameters may be the properties of deployments, such as the id or name or a range of the deployment time. The size of the result set can be retrieved by using the Get Deployment count method.",
-        "operationId": "getDeployments",
         "produces": [
           "application/json"
         ],
@@ -4176,7 +4101,6 @@
         ],
         "summary": "Queries for the number of deployments that fulfill given parameters.",
         "description": "Queries for the number of deployments that fulfill given parameters. Takes the same parameters as the Get Deployments method.",
-        "operationId": "getDeploymentsCount",
         "produces": [
           "application/json"
         ],
@@ -4300,7 +4224,6 @@
         ],
         "summary": "Creates a deployment.",
         "description": "Creates a deployment.Deployments can contain custom code in form of scripts or EL expressions to customize process behavior. This may be abused for remote execution of arbitrary code. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "createDeployment",
         "consumes": [
           "multipart/form-data"
         ],
@@ -4335,7 +4258,6 @@
         ],
         "summary": "Retrieves a deployment by id, according to the `Deployment` interface of the engine.",
         "description": "Retrieves a deployment by id, according to the `Deployment` interface of the engine.",
-        "operationId": "getDeployment",
         "produces": [
           "application/json"
         ],
@@ -4363,7 +4285,6 @@
         ],
         "summary": "Deletes a deployment by id.",
         "description": "Deletes a deployment by id.",
-        "operationId": "deleteDeployment",
         "produces": [
           "application/json"
         ],
@@ -4421,7 +4342,6 @@
         ],
         "summary": "Re-deploys an existing deployment.",
         "description": "Re-deploys an existing deployment.The deployment resources to re-deploy can be restricted by using the properties `resourceIds` or `resourceNames`. If no deployment resources to re-deploy are passed then all existing resources of the given deployment are re-deployed.Deployments can contain custom code in form of scripts or EL expressions to customize process behavior. This may be abused for remote execution of arbitrary code. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "redeploy",
         "produces": [
           "application/json"
         ],
@@ -4463,7 +4383,6 @@
         ],
         "summary": "Retrieves all deployment resources of a given deployment.",
         "description": "Retrieves all deployment resources of a given deployment.",
-        "operationId": "getDeploymentResources",
         "produces": [
           "application/json"
         ],
@@ -4493,7 +4412,6 @@
         ],
         "summary": "Retrieves a deployment resource by resource id for the given deployment.",
         "description": "Retrieves a deployment resource by resource id for the given deployment.",
-        "operationId": "getDeploymentResource",
         "produces": [
           "application/json"
         ],
@@ -4533,7 +4451,6 @@
         ],
         "summary": "Retrieves the binary content of a deployment resource for the given deployment by id.",
         "description": "Retrieves the binary content of a deployment resource for the given deployment by id.",
-        "operationId": "getDeploymentResourceData",
         "produces": [
           "application/json"
         ],
@@ -4570,7 +4487,6 @@
         ],
         "summary": "Queries for the executions that fulfill given parameters.",
         "description": "Queries for the executions that fulfill given parameters. Parameters may be static as well as dynamic runtime properties of executions. The size of the result set can be retrieved by using the Get Execution Count method.",
-        "operationId": "getExecutions",
         "produces": [
           "application/json"
         ],
@@ -4753,7 +4669,6 @@
         ],
         "summary": "Queries for executions that fulfill given parameters through a JSON object.",
         "description": "Queries for executions that fulfill given parameters through a JSON object. This method is slightly more powerful than the Get Executions method because it allows to filter by multiple instance and execution variables of types `String`, `Number` or `Boolean`.",
-        "operationId": "queryExecutions",
         "consumes": [
           "application/json"
         ],
@@ -4810,7 +4725,6 @@
         ],
         "summary": "Queries for the number of executions that fulfill given parameters.",
         "description": "Queries for the number of executions that fulfill given parameters. Takes the same parameters as the Get Executions method.",
-        "operationId": "getExecutionsCount",
         "produces": [
           "application/json"
         ],
@@ -4946,7 +4860,6 @@
         ],
         "summary": "Queries for the number of executions that fulfill given parameters.",
         "description": "Queries for the number of executions that fulfill given parameters. This method takes the same message body as the Get Executions (POST) method and therefore it is slightly more powerful than the Get Execution Count method.",
-        "operationId": "queryExecutionsCount",
         "consumes": [
           "application/json"
         ],
@@ -4984,7 +4897,6 @@
         ],
         "summary": "Retrieves an execution by id, according to the `Execution` interface in the engine.",
         "description": "Retrieves an execution by id, according to the `Execution` interface in the engine.",
-        "operationId": "getExecution",
         "produces": [
           "application/json"
         ],
@@ -5014,7 +4926,6 @@
         ],
         "summary": "Create Incident.",
         "description": "Create Incident",
-        "operationId": "createIncident",
         "consumes": [
           "application/json"
         ],
@@ -5047,7 +4958,6 @@
         ],
         "summary": "Retrieves all variables of a given execution by id.",
         "description": "Retrieves all variables of a given execution by id.",
-        "operationId": "getLocalVariables",
         "produces": [
           "application/json"
         ],
@@ -5075,7 +4985,6 @@
         ],
         "summary": "Updates or deletes the variables in the context of a case execution.",
         "description": "Updates or deletes the variables in the context of a case execution. The updates do not propagate upwards in the case execution hierarchy. Please note: deletion precedes update.",
-        "operationId": "modifyVariables",
         "consumes": [
           "application/json"
         ],
@@ -5120,7 +5029,6 @@
         ],
         "summary": "Retrieves a variable from the context of a given case execution.",
         "description": "Retrieves a variable from the context of a given case execution. Does not traverse the parent case execution hierarchy.",
-        "operationId": "getVariable",
         "produces": [
           "application/json"
         ],
@@ -5166,7 +5074,6 @@
         ],
         "summary": "Sets a variable in the context of a given case execution.",
         "description": "Sets a variable in the context of a given case execution. Update does not propagate upwards in the case execution hierarchy.",
-        "operationId": "putVariable",
         "consumes": [
           "application/json"
         ],
@@ -5213,7 +5120,6 @@
         ],
         "summary": "Deletes a variable in the context of a given case execution.",
         "description": "Deletes a variable in the context of a given case execution. Deletion does not propagate upwards in the case execution hierarchy.",
-        "operationId": "deleteVariable",
         "produces": [
           "application/json"
         ],
@@ -5247,7 +5153,6 @@
         ],
         "summary": "Retrieves a binary variable from the context of a given case execution.",
         "description": "Retrieves a binary variable from the context of a given case execution. Does not traverse the parent case execution hierarchy. Applicable for byte array and file variables.",
-        "operationId": "getVariableBinary",
         "produces": [
           "application/json"
         ],
@@ -5285,7 +5190,6 @@
         ],
         "summary": "Sets the serialized value for a binary variable or the binary value for a file variable.",
         "description": "Sets the serialized value for a binary variable or the binary value for a file variable.",
-        "operationId": "setBinaryVariable",
         "consumes": [
           "multipart/form-data"
         ],
@@ -5334,7 +5238,6 @@
         ],
         "summary": "Retrieves a message event subscription for a given execution by id and a message name.",
         "description": "Retrieves a message event subscription for a given execution by id and a message name.",
-        "operationId": "getMessageEventSubscription",
         "produces": [
           "application/json"
         ],
@@ -5371,7 +5274,6 @@
         ],
         "summary": "Delivers a message to a specific execution by id, to trigger an existing message event subscription.",
         "description": "Delivers a message to a specific execution by id, to trigger an existing message event subscription. Inject process variables as the message's payload.",
-        "operationId": "triggerEvent",
         "consumes": [
           "application/json"
         ],
@@ -5423,7 +5325,6 @@
         ],
         "summary": "Signals an execution by id.",
         "description": "Signals an execution by id. Can for example be used to explicitly skip user tasks or signal asynchronous continuations.",
-        "operationId": "signalExecution",
         "consumes": [
           "application/json"
         ],
@@ -5465,7 +5366,6 @@
         ],
         "summary": "Queries for the external tasks that fulfill given parameters.",
         "description": "Queries for the external tasks that fulfill given parameters. Parameters may be static as well as dynamic runtime properties of executions. The size of the result set can be retrieved by using the Get External Task Count method.",
-        "operationId": "getExternalTasks",
         "produces": [
           "application/json"
         ],
@@ -5669,7 +5569,6 @@
         ],
         "summary": "Queries for external tasks that fulfill given parameters in the form of a JSON object.",
         "description": "Queries for external tasks that fulfill given parameters in the form of a JSON object. This method is slightly more powerful than the Get External Tasks method because it allows to specify a hierarchical result sorting.",
-        "operationId": "queryExternalTasks",
         "consumes": [
           "application/json"
         ],
@@ -5726,7 +5625,6 @@
         ],
         "summary": "Queries for the number of external tasks that fulfill given parameters.",
         "description": "Queries for the number of external tasks that fulfill given parameters. Takes the same parameters as the Get External Tasks method.",
-        "operationId": "getExternalTasksCount",
         "produces": [
           "application/json"
         ],
@@ -5883,7 +5781,6 @@
         ],
         "summary": "Queries for the number of external tasks that fulfill given parameters.",
         "description": "Queries for the number of external tasks that fulfill given parameters. This method takes the same message body as the Get External Tasks (POST) method.",
-        "operationId": "queryExternalTasksCount",
         "consumes": [
           "application/json"
         ],
@@ -5921,7 +5818,6 @@
         ],
         "summary": "Fetches and locks a specific number of external tasks for execution by a worker.",
         "description": "Fetches and locks a specific number of external tasks for execution by a worker. Query can be restricted to specific task topics and for each task topic an individual lock time can be provided.",
-        "operationId": "fetchAndLock",
         "consumes": [
           "application/json"
         ],
@@ -5962,7 +5858,6 @@
         ],
         "summary": "Set Retries.",
         "description": "Set Retries",
-        "operationId": "setRetries",
         "consumes": [
           "application/json"
         ],
@@ -5980,7 +5875,6 @@
         ],
         "summary": "Sets the number of retries left to execute external tasks by id asynchronously.",
         "description": "Sets the number of retries left to execute external tasks by id asynchronously. If retries are set to 0, an incident is created.",
-        "operationId": "setRetriesAsync",
         "consumes": [
           "application/json"
         ],
@@ -6021,7 +5915,6 @@
         ],
         "summary": "Retrieves an external task by id, corresponding to the `ExternalTask` interface in the engine.",
         "description": "Retrieves an external task by id, corresponding to the `ExternalTask` interface in the engine.",
-        "operationId": "getExternalTask",
         "parameters": [
           {
             "name": "id",
@@ -6048,7 +5941,6 @@
         ],
         "summary": "Reports a business error in the context of a running external task by id.",
         "description": "Reports a business error in the context of a running external task by id. The error code must be specified to identify the BPMN error handler.",
-        "operationId": "handleBpmnError",
         "consumes": [
           "application/json"
         ],
@@ -6093,7 +5985,6 @@
         ],
         "summary": "Completes an external task by id and updates process variables.",
         "description": "Completes an external task by id and updates process variables.",
-        "operationId": "complete",
         "consumes": [
           "application/json"
         ],
@@ -6138,7 +6029,6 @@
         ],
         "summary": "Get Error Details.",
         "description": "Get Error Details",
-        "operationId": "getErrorDetails",
         "produces": [
           "text/plain"
         ],
@@ -6168,7 +6058,6 @@
         ],
         "summary": "Extend Lock.",
         "description": "Extend Lock",
-        "operationId": "extendLock",
         "consumes": [
           "application/json"
         ],
@@ -6195,7 +6084,6 @@
         ],
         "summary": "Reports a failure to execute an external task by id.",
         "description": "Reports a failure to execute an external task by id. A number of retries and a timeout until the task can be retried can be specified. If retries are set to 0, an incident for this task is created.",
-        "operationId": "handleFailure",
         "consumes": [
           "application/json"
         ],
@@ -6240,7 +6128,6 @@
         ],
         "summary": "Sets the priority of an existing external task by id.",
         "description": "Sets the priority of an existing external task by id. The default value of a priority is 0.",
-        "operationId": "setPriority",
         "consumes": [
           "application/json"
         ],
@@ -6279,7 +6166,6 @@
         ],
         "summary": "Sets the number of retries left to execute an external task by id.",
         "description": "Sets the number of retries left to execute an external task by id. If retries are set to 0, an incident is created.",
-        "operationId": "setRetries",
         "consumes": [
           "application/json"
         ],
@@ -6321,7 +6207,6 @@
         ],
         "summary": "Unlocks an external task by id.",
         "description": "Unlocks an external task by id. Clears the task's lock expiration time and worker id.",
-        "operationId": "unlock",
         "parameters": [
           {
             "name": "id",
@@ -6348,7 +6233,6 @@
         ],
         "summary": "Queries for a list of filters using a list of parameters.",
         "description": "Queries for a list of filters using a list of parameters. The size of the result set can be retrieved by using the Get Filter Count method.",
-        "operationId": "getFilters",
         "produces": [
           "application/json"
         ],
@@ -6468,7 +6352,6 @@
         ],
         "summary": "The `/filter` resource supports two custom OPTIONS requests, one for the resource as such and one for individual filter instances.",
         "description": "The `/filter` resource supports two custom OPTIONS requests, one for the resource as such and one for individual filter instances. The OPTIONS request allows you to check for the set of available operations that the currently authenticated user can perform on the `/filter` resource. Whether the user can perform an operation or not may depend on various factors, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -6489,7 +6372,6 @@
         ],
         "summary": "Retrieves the number of filters that fulfill a provided query.",
         "description": "Retrieves the number of filters that fulfill a provided query. Corresponds to the size of the result set when using the Get Filters method.",
-        "operationId": "getFiltersCount",
         "produces": [
           "application/json"
         ],
@@ -6550,7 +6432,6 @@
         ],
         "summary": "Creates a new filter.",
         "description": "Creates a new filter.The `query` parameter of the request body takes a JSON-serialized query. Some query types (e.g., task queries) allow to specify EL expressions in their parameters and may therefore be abused for remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "createFilter",
         "consumes": [
           "application/json"
         ],
@@ -6585,7 +6466,6 @@
         ],
         "summary": "Retrieves a single filter by id, according to the `Filter` interface in the engine.",
         "description": "Retrieves a single filter by id, according to the `Filter` interface in the engine.",
-        "operationId": "getFilter",
         "produces": [
           "application/json"
         ],
@@ -6616,7 +6496,6 @@
         ],
         "summary": "Updates an existing filter.",
         "description": "Updates an existing filter.The `query` parameter of the request body takes a JSON-serialized query. Some query types (e.g., task queries) allow to specify EL expressions in their parameters and may therefore be abused for remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "updateFilter",
         "consumes": [
           "application/json"
         ],
@@ -6662,7 +6541,6 @@
         ],
         "summary": "Deletes a filter by id.",
         "description": "Deletes a filter by id.",
-        "operationId": "deleteFilter",
         "produces": [
           "application/json"
         ],
@@ -6693,7 +6571,6 @@
         ],
         "summary": "The `/filter` resource supports two custom OPTIONS requests, one for the resource as such and one for individual filter instances.",
         "description": "The `/filter` resource supports two custom OPTIONS requests, one for the resource as such and one for individual filter instances. The OPTIONS request allows you to check for the set of available operations that the currently authenticated user can perform on the `/filter` resource. Whether the user can perform an operation or not may depend on various factors, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -6723,7 +6600,6 @@
         ],
         "summary": "Executes the saved query of the filter by id and returns the count.",
         "description": "Executes the saved query of the filter by id and returns the count.",
-        "operationId": "executeCount",
         "produces": [
           "application/json"
         ],
@@ -6757,7 +6633,6 @@
         ],
         "summary": "Executes the saved query of the filter by id and returns the count.",
         "description": "Executes the saved query of the filter by id and returns the count. This method is slightly more powerful then the Get Execute Filter Count method because it allows to extend the saved query of the filter.The request body of this method takes a JSON-serialized query. Some query types (e.g., task queries) allow to specify EL expressions in their parameters and may therefore be abused for remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "queryCount",
         "consumes": [
           "application/json"
         ],
@@ -6808,7 +6683,6 @@
         ],
         "summary": "Executes the saved query of the filter by id and returns the result list.",
         "description": "Executes the saved query of the filter by id and returns the result list.",
-        "operationId": "executeList",
         "produces": [
           "application/json",
           "application/hal+json"
@@ -6859,7 +6733,6 @@
         ],
         "summary": "Executes the saved query of the filter by id and returns the result list.",
         "description": "Executes the saved query of the filter by id and returns the result list. This method is slightly more powerful then the Get Execute Filter List method because it allows to extend the saved query of the filter.The request body of this method takes a JSON-serialized query. Some query types (e.g., task queries) allow to specify EL expressions in their parameters and may therefore be abused for remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "queryList",
         "consumes": [
           "application/json"
         ],
@@ -6918,7 +6791,6 @@
         ],
         "summary": "Executes the saved query of the filter by id and returns the single result.",
         "description": "Executes the saved query of the filter by id and returns the single result.",
-        "operationId": "executeSingleResult",
         "produces": [
           "application/json",
           "application/hal+json"
@@ -6959,7 +6831,6 @@
         ],
         "summary": "Executes the saved query of the filter by id and returns the single result.",
         "description": "Executes the saved query of the filter by id and returns the single result. This method is slightly more powerful then the Get Execute Filter Single Result method because it allows to extend the saved query of the filter.The request body of this method takes a JSON-serialized query. Some query types (e.g., task queries) allow to specify EL expressions in their parameters and may therefore be abused for remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "querySingleResult",
         "consumes": [
           "application/json"
         ],
@@ -7014,7 +6885,6 @@
         ],
         "summary": "Queries for a list of groups using a list of parameters.",
         "description": "Queries for a list of groups using a list of parameters. The size of the result set can be retrieved by using the Get Group Count method.",
-        "operationId": "queryGroups",
         "produces": [
           "application/json"
         ],
@@ -7127,7 +6997,6 @@
         ],
         "summary": "The `/group` resource supports two custom OPTIONS requests, one for the resource as such and one for individual group instances.",
         "description": "The `/group` resource supports two custom OPTIONS requests, one for the resource as such and one for individual group instances. The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the `/group` resource. If the user can perform an operation or not may depend on various things, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -7148,7 +7017,6 @@
         ],
         "summary": "Queries for groups using a list of parameters and retrieves the count.",
         "description": "Queries for groups using a list of parameters and retrieves the count.",
-        "operationId": "getGroupCount",
         "produces": [
           "application/json"
         ],
@@ -7216,7 +7084,6 @@
         ],
         "summary": "Creates a new group.",
         "description": "Creates a new group.",
-        "operationId": "createGroup",
         "consumes": [
           "application/json"
         ],
@@ -7254,7 +7121,6 @@
         ],
         "summary": "Retrieves a group by id.",
         "description": "Retrieves a group by id.",
-        "operationId": "getGroup",
         "produces": [
           "application/json"
         ],
@@ -7282,7 +7148,6 @@
         ],
         "summary": "Updates a given group by id.",
         "description": "Updates a given group by id.",
-        "operationId": "updateGroup",
         "consumes": [
           "application/json"
         ],
@@ -7328,7 +7193,6 @@
         ],
         "summary": "Deletes a group by id.",
         "description": "Deletes a group by id.",
-        "operationId": "deleteGroup",
         "produces": [
           "application/json"
         ],
@@ -7359,7 +7223,6 @@
         ],
         "summary": "The `/group` resource supports two custom OPTIONS requests, one for the resource as such and one for individual group instances.",
         "description": "The `/group` resource supports two custom OPTIONS requests, one for the resource as such and one for individual group instances. The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the `/group` resource. If the user can perform an operation or not may depend on various things, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -7389,7 +7252,6 @@
         ],
         "summary": "Get Group Members Resource.",
         "description": "Get Group Members Resource",
-        "operationId": "getGroupMembersResource",
         "produces": [
           "application/json"
         ],
@@ -7414,7 +7276,6 @@
         ],
         "summary": "The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the resource.",
         "description": "The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the resource. If the user can perform an operation or not may depend on various things, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -7444,7 +7305,6 @@
         ],
         "summary": "Adds a member to a group.",
         "description": "Adds a member to a group.",
-        "operationId": "createGroupMember",
         "produces": [
           "application/json"
         ],
@@ -7482,7 +7342,6 @@
         ],
         "summary": "Removes a member from a group.",
         "description": "Removes a member from a group.",
-        "operationId": "deleteGroupMember",
         "produces": [
           "application/json"
         ],
@@ -7522,7 +7381,6 @@
         ],
         "summary": "Gets the groups of a user by id and includes all users that share a group with the given user.",
         "description": "Gets the groups of a user by id and includes all users that share a group with the given user.",
-        "operationId": "getGroupInfo",
         "produces": [
           "application/json"
         ],
@@ -7555,7 +7413,6 @@
         ],
         "summary": "Verifies that user credentials are valid.",
         "description": "Verifies that user credentials are valid.",
-        "operationId": "verifyUser",
         "consumes": [
           "application/json"
         ],
@@ -7593,7 +7450,6 @@
         ],
         "summary": "Queries for jobs that fulfill given parameters.",
         "description": "Queries for jobs that fulfill given parameters. The size of the result set can be retrieved by using the Get Job Count method.",
-        "operationId": "getJobs",
         "produces": [
           "application/json"
         ],
@@ -7818,7 +7674,6 @@
         ],
         "summary": "Queries for jobs that fulfill given parameters.",
         "description": "Queries for jobs that fulfill given parameters. This method is slightly more powerful than the Get Jobs method because it allows filtering by multiple jobs of types String, Number or Boolean.",
-        "operationId": "queryJobs",
         "consumes": [
           "application/json"
         ],
@@ -7875,7 +7730,6 @@
         ],
         "summary": "Queries for job definitions that fulfill given parameters.",
         "description": "Queries for job definitions that fulfill given parameters. The size of the result set can be retrieved by using the Get Job Definition Count method.",
-        "operationId": "getJobDefinitions",
         "produces": [
           "application/json"
         ],
@@ -8016,7 +7870,6 @@
         ],
         "summary": "Queries for job definitions that fulfill given parameters.",
         "description": "Queries for job definitions that fulfill given parameters. This method is slightly more powerful than the Get Job Definitions method because it allows filtering by multiple job definitions of types String, Number or Boolean.",
-        "operationId": "queryJobDefinitions",
         "consumes": [
           "application/json"
         ],
@@ -8073,7 +7926,6 @@
         ],
         "summary": "Queries for the number of job definitions that fulfill given parameters.",
         "description": "Queries for the number of job definitions that fulfill given parameters. Takes the same parameters as the Get Job Definitions method.",
-        "operationId": "getJobDefinitionsCount",
         "produces": [
           "application/json"
         ],
@@ -8181,7 +8033,6 @@
         ],
         "summary": "Queries for the number of job definitions that fulfill given parameters.",
         "description": "Queries for the number of job definitions that fulfill given parameters. This method takes the same message body as the Get Job Definitions (POST) method and therefore it is slightly more powerful than the Get Job Definition Count method.",
-        "operationId": "queryJobDefinitionsCount",
         "consumes": [
           "application/json"
         ],
@@ -8219,7 +8070,6 @@
         ],
         "summary": "Activates or suspends job definitions with the given process definition id.",
         "description": "Activates or suspends job definitions with the given process definition id.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -8254,7 +8104,6 @@
         ],
         "summary": "Retrieves a job definition by id, according to the `JobDefinition` interface in the engine.",
         "description": "Retrieves a job definition by id, according to the `JobDefinition` interface in the engine.",
-        "operationId": "getJobDefinition",
         "produces": [
           "application/json"
         ],
@@ -8284,7 +8133,6 @@
         ],
         "summary": "Sets an overriding execution priority for jobs with the given definition id.",
         "description": "Sets an overriding execution priority for jobs with the given definition id. Optionally, the priorities of all the definition's existing jobs are updated accordingly. The priority can be reset by setting it to null, meaning that a new job's priority will not be determined based on its definition's priority any longer. See the user guide on job prioritization for details.",
-        "operationId": "setJobPriority",
         "consumes": [
           "application/json"
         ],
@@ -8329,7 +8177,6 @@
         ],
         "summary": "Sets the number of retries of all failed jobs associated with the given job definition id.",
         "description": "Sets the number of retries of all failed jobs associated with the given job definition id.",
-        "operationId": "setJobRetries",
         "consumes": [
           "application/json"
         ],
@@ -8371,7 +8218,6 @@
         ],
         "summary": "Activates or suspends a given job definition by id.",
         "description": "Activates or suspends a given job definition by id.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -8413,7 +8259,6 @@
         ],
         "summary": "Queries for the number of jobs that fulfill given parameters.",
         "description": "Queries for the number of jobs that fulfill given parameters. Takes the same parameters as the Get Jobs method.",
-        "operationId": "getJobsCount",
         "produces": [
           "application/json"
         ],
@@ -8588,7 +8433,6 @@
         ],
         "summary": "Queries for jobs that fulfill given parameters.",
         "description": "Queries for jobs that fulfill given parameters. This method takes the same message body as the Get Jobs (POST) method and therefore it is slightly more powerful than the Get Job Count method.",
-        "operationId": "queryJobsCount",
         "consumes": [
           "application/json"
         ],
@@ -8626,7 +8470,6 @@
         ],
         "summary": "Create a batch to set retries of jobs asynchronously.",
         "description": "Create a batch to set retries of jobs asynchronously.",
-        "operationId": "setRetries",
         "consumes": [
           "application/json"
         ],
@@ -8664,7 +8507,6 @@
         ],
         "summary": "Activates or suspends jobs with the given process definition id.",
         "description": "Activates or suspends jobs with the given process definition id.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -8699,7 +8541,6 @@
         ],
         "summary": "Retrieves a job by id, according to the `Job` interface in the engine.",
         "description": "Retrieves a job by id, according to the `Job` interface in the engine.",
-        "operationId": "getJob",
         "produces": [
           "application/json"
         ],
@@ -8727,7 +8568,6 @@
         ],
         "summary": "Deletes a job by id.",
         "description": "Deletes a job by id.",
-        "operationId": "deleteJob",
         "produces": [
           "application/json"
         ],
@@ -8760,7 +8600,6 @@
         ],
         "summary": "Updates the due date of a job by id.",
         "description": "Updates the due date of a job by id.",
-        "operationId": "setJobDuedate",
         "consumes": [
           "application/json"
         ],
@@ -8805,7 +8644,6 @@
         ],
         "summary": "Executes a job by id.",
         "description": "Executes a job by id. \nNote: The execution of the job happens synchronously in the same thread.",
-        "operationId": "executeJob",
         "produces": [
           "application/json"
         ],
@@ -8838,7 +8676,6 @@
         ],
         "summary": "Sets the execution priority of a job by id.",
         "description": "Sets the execution priority of a job by id.",
-        "operationId": "setJobPriority",
         "consumes": [
           "application/json"
         ],
@@ -8883,7 +8720,6 @@
         ],
         "summary": "Sets the retries of the job to the given number of retries by id.",
         "description": "Sets the retries of the job to the given number of retries by id.",
-        "operationId": "setJobRetries",
         "consumes": [
           "application/json"
         ],
@@ -8928,7 +8764,6 @@
         ],
         "summary": "Retrieves the exception stacktrace corresponding to the passed job id.",
         "description": "Retrieves the exception stacktrace corresponding to the passed job id.",
-        "operationId": "getStacktrace",
         "produces": [
           "text/plain"
         ],
@@ -8961,7 +8796,6 @@
         ],
         "summary": "Activates or suspends a given job by id.",
         "description": "Activates or suspends a given job by id.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -9000,7 +8834,6 @@
         ],
         "summary": "Correlates a message to the process engine to either trigger a message start event or an intermediate message catching event.",
         "description": "Correlates a message to the process engine to either trigger a message start event or an intermediate message catching event. Internally this maps to the engine's message correlation builder methods `MessageCorrelationBuilder#correlateWithResult()` and `MessageCorrelationBuilder#correlateAllWithResult()`. For more information about the correlation behavior, see the Message Events section of the BPMN 2.0 Implementation Reference.",
-        "operationId": "deliverMessage",
         "consumes": [
           "application/json"
         ],
@@ -9038,7 +8871,6 @@
         ],
         "summary": "Executes a migration plan synchronously for multiple process instances.",
         "description": "Executes a migration plan synchronously for multiple process instances. To execute a migration plan asynchronously, use the Execute Migration Plan Async (Batch) method.For more information about the difference between synchronous and asynchronous execution of a migration plan, please refer to the related section of the user guide.",
-        "operationId": "executeMigrationPlan",
         "consumes": [
           "application/json"
         ],
@@ -9067,7 +8899,6 @@
         ],
         "summary": "Executes a migration plan asynchronously (batch) for multiple process instances.",
         "description": "Executes a migration plan asynchronously (batch) for multiple process instances. To execute a migration plan synchronously, use the Execute Migration Plan method.For more information about the difference between synchronous and asynchronous execution of a migration plan, please refer to the related section of the user guide.",
-        "operationId": "executeMigrationPlanAsync",
         "consumes": [
           "application/json"
         ],
@@ -9102,7 +8933,6 @@
         ],
         "summary": "Generates a migration plan for two process definitions.",
         "description": "Generates a migration plan for two process definitions. The generated migration plan contains migration instructions which map equal activities between the two process definitions.",
-        "operationId": "generateMigrationPlan",
         "consumes": [
           "application/json"
         ],
@@ -9137,7 +8967,6 @@
         ],
         "summary": "Validates a migration plan statically without executing it.",
         "description": "Validates a migration plan statically without executing it. This corresponds to the creation time validation described in the user guide.",
-        "operationId": "validateMigrationPlan",
         "consumes": [
           "application/json"
         ],
@@ -9172,7 +9001,6 @@
         ],
         "summary": "Execute Modification.",
         "description": "Execute Modification",
-        "operationId": "executeModification",
         "consumes": [
           "application/json"
         ],
@@ -9193,7 +9021,6 @@
         ],
         "summary": "Executes a modification asynchronously for multiple process instances.",
         "description": "Executes a modification asynchronously for multiple process instances. To execute a modification synchronously, use the Execute Modification method.For more information about the difference between synchronous and asynchronous execution of a modification, please refer to the related section of the user guide.",
-        "operationId": "executeModificationAsync",
         "consumes": [
           "application/json"
         ],
@@ -9228,7 +9055,6 @@
         ],
         "summary": "Queries for process definitions that fulfill given parameters.",
         "description": "Queries for process definitions that fulfill given parameters. Parameters may be the properties of process definitions, such as the name, key or version. The size of the result set can be retrieved by using the Get Definition Count method.",
-        "operationId": "getProcessDefinitions",
         "produces": [
           "application/json"
         ],
@@ -9476,7 +9302,6 @@
         ],
         "summary": "Requests the number of process definitions that fulfill the query criteria.",
         "description": "Requests the number of process definitions that fulfill the query criteria. Takes the same filtering parameters as the Get Definitions method.",
-        "operationId": "getProcessDefinitionsCount",
         "produces": [
           "application/json"
         ],
@@ -9677,7 +9502,6 @@
         ],
         "summary": "Retrieves a process definition according to the `ProcessDefinition` interface in the engine.",
         "description": "Retrieves a process definition according to the `ProcessDefinition` interface in the engine.",
-        "operationId": "getProcessDefinitionByKey",
         "produces": [
           "application/json"
         ],
@@ -9705,7 +9529,6 @@
         ],
         "summary": "Delete Process Definition.",
         "description": "Delete Process Definition",
-        "operationId": "deleteProcessDefinition",
         "produces": [
           "application/json"
         ],
@@ -9744,7 +9567,6 @@
         ],
         "summary": "Delete Process Definitions By Key.",
         "description": "Delete Process Definitions By Key",
-        "operationId": "deleteProcessDefinitionsByKey",
         "produces": [
           "application/json"
         ],
@@ -9782,7 +9604,6 @@
         ],
         "summary": "Get Deployed Start Form.",
         "description": "Get Deployed Start Form",
-        "operationId": "getDeployedStartForm",
         "produces": [
           "application/json"
         ],
@@ -9809,7 +9630,6 @@
         ],
         "summary": "Retrieves the diagram of a process definition.",
         "description": "Retrieves the diagram of a process definition.",
-        "operationId": "getProcessDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -9842,7 +9662,6 @@
         ],
         "summary": "Retrieves the start form variables for a process definition (only if they are defined via the Generated Task Form approach).",
         "description": "Retrieves the start form variables for a process definition (only if they are defined via the Generated Task Form approach). The start form variables take form data specified on the start event into account. If form fields are defined, the variable types and default values of the form fields are taken into account.",
-        "operationId": "getFormVariables",
         "produces": [
           "application/json"
         ],
@@ -9893,7 +9712,6 @@
         ],
         "summary": "Updates history time to live for process definition.",
         "description": "Updates history time to live for process definition. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -9938,7 +9756,6 @@
         ],
         "summary": "Retrieves the rendered form for a process definition.",
         "description": "Retrieves the rendered form for a process definition. This method can be used for getting the HTML rendering of a Generated Task Form.",
-        "operationId": "getRenderedForm",
         "produces": [
           "application/xhtml+xml"
         ],
@@ -9971,7 +9788,6 @@
         ],
         "summary": "Restart Process Instance.",
         "description": "Restart Process Instance",
-        "operationId": "restartProcessInstance",
         "consumes": [
           "application/json"
         ],
@@ -10001,7 +9817,6 @@
         ],
         "summary": "Restart Process Instance Async.",
         "description": "Restart Process Instance Async",
-        "operationId": "restartProcessInstanceAsync",
         "consumes": [
           "application/json"
         ],
@@ -10034,7 +9849,6 @@
         ],
         "summary": "Instantiates a given process definition.",
         "description": "Instantiates a given process definition. Process variables and business key may be supplied in the request body.",
-        "operationId": "startProcessInstance",
         "consumes": [
           "application/json"
         ],
@@ -10085,7 +9899,6 @@
         ],
         "summary": "Retrieves the key of the start form for a process definition.",
         "description": "Retrieves the key of the start form for a process definition. The form key corresponds to the `FormData#formKey` property in the engine.",
-        "operationId": "getStartForm",
         "produces": [
           "application/json"
         ],
@@ -10121,7 +9934,6 @@
         ],
         "summary": "Retrieves runtime statistics of a given process definition, grouped by activities.",
         "description": "Retrieves runtime statistics of a given process definition, grouped by activities. These statistics include the number of running activity instances, optionally the number of failed jobs and also optionally the number of incidents either grouped by incident types or for a specific incident type.\n Note: This does not include historic data.",
-        "operationId": "getActivityStatistics",
         "produces": [
           "application/json"
         ],
@@ -10181,7 +9993,6 @@
         ],
         "summary": "Starts a process instance using a set of process variables and the business key.",
         "description": "Starts a process instance using a set of process variables and the business key. If the start event has Form Field Metadata defined, the process engine will perform backend validation for any form fields which have validators defined. See Documentation on Generated Task Forms.",
-        "operationId": "submitForm",
         "consumes": [
           "application/json"
         ],
@@ -10235,7 +10046,6 @@
         ],
         "summary": "Activates or suspends a given process definition by id or by latest version of process definition key.",
         "description": "Activates or suspends a given process definition by id or by latest version of process definition key.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -10280,7 +10090,6 @@
         ],
         "summary": "Retrieves a process definition according to the `ProcessDefinition` interface in the engine.",
         "description": "Retrieves a process definition according to the `ProcessDefinition` interface in the engine.",
-        "operationId": "getProcessDefinitionByKeyAndTenantId",
         "produces": [
           "application/json"
         ],
@@ -10315,7 +10124,6 @@
         ],
         "summary": "Delete Process Definition.",
         "description": "Delete Process Definition",
-        "operationId": "deleteProcessDefinition",
         "produces": [
           "application/json"
         ],
@@ -10361,7 +10169,6 @@
         ],
         "summary": "Delete Process Definitions By Key And Tenant Id.",
         "description": "Delete Process Definitions By Key And Tenant Id",
-        "operationId": "deleteProcessDefinitionsByKeyAndTenantId",
         "produces": [
           "application/json"
         ],
@@ -10405,7 +10212,6 @@
         ],
         "summary": "Get Deployed Start Form.",
         "description": "Get Deployed Start Form",
-        "operationId": "getDeployedStartForm",
         "produces": [
           "application/json"
         ],
@@ -10439,7 +10245,6 @@
         ],
         "summary": "Retrieves the diagram of a process definition.",
         "description": "Retrieves the diagram of a process definition.",
-        "operationId": "getProcessDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -10479,7 +10284,6 @@
         ],
         "summary": "Retrieves the start form variables for a process definition (only if they are defined via the Generated Task Form approach).",
         "description": "Retrieves the start form variables for a process definition (only if they are defined via the Generated Task Form approach). The start form variables take form data specified on the start event into account. If form fields are defined, the variable types and default values of the form fields are taken into account.",
-        "operationId": "getFormVariables",
         "produces": [
           "application/json"
         ],
@@ -10537,7 +10341,6 @@
         ],
         "summary": "Updates history time to live for process definition.",
         "description": "Updates history time to live for process definition. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -10589,7 +10392,6 @@
         ],
         "summary": "Retrieves the rendered form for a process definition.",
         "description": "Retrieves the rendered form for a process definition. This method can be used for getting the HTML rendering of a Generated Task Form.",
-        "operationId": "getRenderedForm",
         "produces": [
           "application/xhtml+xml"
         ],
@@ -10629,7 +10431,6 @@
         ],
         "summary": "Restart Process Instance.",
         "description": "Restart Process Instance",
-        "operationId": "restartProcessInstance",
         "consumes": [
           "application/json"
         ],
@@ -10666,7 +10467,6 @@
         ],
         "summary": "Restart Process Instance Async.",
         "description": "Restart Process Instance Async",
-        "operationId": "restartProcessInstanceAsync",
         "consumes": [
           "application/json"
         ],
@@ -10706,7 +10506,6 @@
         ],
         "summary": "Instantiates a given process definition.",
         "description": "Instantiates a given process definition. Process variables and business key may be supplied in the request body.",
-        "operationId": "startProcessInstance",
         "consumes": [
           "application/json"
         ],
@@ -10764,7 +10563,6 @@
         ],
         "summary": "Retrieves the key of the start form for a process definition.",
         "description": "Retrieves the key of the start form for a process definition. The form key corresponds to the `FormData#formKey` property in the engine.",
-        "operationId": "getStartForm",
         "produces": [
           "application/json"
         ],
@@ -10807,7 +10605,6 @@
         ],
         "summary": "Retrieves runtime statistics of a given process definition, grouped by activities.",
         "description": "Retrieves runtime statistics of a given process definition, grouped by activities. These statistics include the number of running activity instances, optionally the number of failed jobs and also optionally the number of incidents either grouped by incident types or for a specific incident type.\n Note: This does not include historic data.",
-        "operationId": "getActivityStatistics",
         "produces": [
           "application/json"
         ],
@@ -10874,7 +10671,6 @@
         ],
         "summary": "Starts a process instance using a set of process variables and the business key.",
         "description": "Starts a process instance using a set of process variables and the business key. If the start event has Form Field Metadata defined, the process engine will perform backend validation for any form fields which have validators defined. See Documentation on Generated Task Forms.",
-        "operationId": "submitForm",
         "consumes": [
           "application/json"
         ],
@@ -10935,7 +10731,6 @@
         ],
         "summary": "Activates or suspends a given process definition by id or by latest version of process definition key.",
         "description": "Activates or suspends a given process definition by id or by latest version of process definition key.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -10987,7 +10782,6 @@
         ],
         "summary": "Retrieves the BPMN 2.",
         "description": "Retrieves the BPMN 2.0 XML of a process definition.",
-        "operationId": "getProcessDefinitionBpmn20Xml",
         "produces": [
           "application/json"
         ],
@@ -11027,7 +10821,6 @@
         ],
         "summary": "Retrieves the BPMN 2.",
         "description": "Retrieves the BPMN 2.0 XML of a process definition.",
-        "operationId": "getProcessDefinitionBpmn20Xml",
         "produces": [
           "application/json"
         ],
@@ -11060,7 +10853,6 @@
         ],
         "summary": "Retrieves runtime statistics of the process engine, grouped by process definitions.",
         "description": "Retrieves runtime statistics of the process engine, grouped by process definitions. These statistics include the number of running process instances, optionally the number of failed jobs and also optionally the number of incidents either grouped by incident types or for a specific incident type.\n Note: This does not include historic data.",
-        "operationId": "getStatistics",
         "produces": [
           "application/json"
         ],
@@ -11110,7 +10902,6 @@
         ],
         "summary": "Activates or suspends process definitions with the given process definition key.",
         "description": "Activates or suspends process definitions with the given process definition key.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -11145,7 +10936,6 @@
         ],
         "summary": "Retrieves a process definition according to the `ProcessDefinition` interface in the engine.",
         "description": "Retrieves a process definition according to the `ProcessDefinition` interface in the engine.",
-        "operationId": "getProcessDefinitionById",
         "produces": [
           "application/json"
         ],
@@ -11173,7 +10963,6 @@
         ],
         "summary": "Delete Process Definition.",
         "description": "Delete Process Definition",
-        "operationId": "deleteProcessDefinition",
         "produces": [
           "application/json"
         ],
@@ -11212,7 +11001,6 @@
         ],
         "summary": "Get Deployed Start Form.",
         "description": "Get Deployed Start Form",
-        "operationId": "getDeployedStartForm",
         "produces": [
           "application/json"
         ],
@@ -11239,7 +11027,6 @@
         ],
         "summary": "Retrieves the diagram of a process definition.",
         "description": "Retrieves the diagram of a process definition.",
-        "operationId": "getProcessDefinitionDiagram",
         "produces": [
           "application/json"
         ],
@@ -11272,7 +11059,6 @@
         ],
         "summary": "Retrieves the start form variables for a process definition (only if they are defined via the Generated Task Form approach).",
         "description": "Retrieves the start form variables for a process definition (only if they are defined via the Generated Task Form approach). The start form variables take form data specified on the start event into account. If form fields are defined, the variable types and default values of the form fields are taken into account.",
-        "operationId": "getFormVariables",
         "produces": [
           "application/json"
         ],
@@ -11323,7 +11109,6 @@
         ],
         "summary": "Updates history time to live for process definition.",
         "description": "Updates history time to live for process definition. The field is used within History cleanup.",
-        "operationId": "updateHistoryTimeToLive",
         "consumes": [
           "application/json"
         ],
@@ -11368,7 +11153,6 @@
         ],
         "summary": "Retrieves the rendered form for a process definition.",
         "description": "Retrieves the rendered form for a process definition. This method can be used for getting the HTML rendering of a Generated Task Form.",
-        "operationId": "getRenderedForm",
         "produces": [
           "application/xhtml+xml"
         ],
@@ -11401,7 +11185,6 @@
         ],
         "summary": "Restart Process Instance.",
         "description": "Restart Process Instance",
-        "operationId": "restartProcessInstance",
         "consumes": [
           "application/json"
         ],
@@ -11431,7 +11214,6 @@
         ],
         "summary": "Restart Process Instance Async.",
         "description": "Restart Process Instance Async",
-        "operationId": "restartProcessInstanceAsync",
         "consumes": [
           "application/json"
         ],
@@ -11464,7 +11246,6 @@
         ],
         "summary": "Instantiates a given process definition.",
         "description": "Instantiates a given process definition. Process variables and business key may be supplied in the request body.",
-        "operationId": "startProcessInstance",
         "consumes": [
           "application/json"
         ],
@@ -11515,7 +11296,6 @@
         ],
         "summary": "Retrieves the key of the start form for a process definition.",
         "description": "Retrieves the key of the start form for a process definition. The form key corresponds to the `FormData#formKey` property in the engine.",
-        "operationId": "getStartForm",
         "produces": [
           "application/json"
         ],
@@ -11551,7 +11331,6 @@
         ],
         "summary": "Retrieves runtime statistics of a given process definition, grouped by activities.",
         "description": "Retrieves runtime statistics of a given process definition, grouped by activities. These statistics include the number of running activity instances, optionally the number of failed jobs and also optionally the number of incidents either grouped by incident types or for a specific incident type.\n Note: This does not include historic data.",
-        "operationId": "getActivityStatistics",
         "produces": [
           "application/json"
         ],
@@ -11611,7 +11390,6 @@
         ],
         "summary": "Starts a process instance using a set of process variables and the business key.",
         "description": "Starts a process instance using a set of process variables and the business key. If the start event has Form Field Metadata defined, the process engine will perform backend validation for any form fields which have validators defined. See Documentation on Generated Task Forms.",
-        "operationId": "submitForm",
         "consumes": [
           "application/json"
         ],
@@ -11665,7 +11443,6 @@
         ],
         "summary": "Activates or suspends a given process definition by id or by latest version of process definition key.",
         "description": "Activates or suspends a given process definition by id or by latest version of process definition key.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -11710,7 +11487,6 @@
         ],
         "summary": "Retrieves the BPMN 2.",
         "description": "Retrieves the BPMN 2.0 XML of a process definition.",
-        "operationId": "getProcessDefinitionBpmn20Xml",
         "produces": [
           "application/json"
         ],
@@ -11743,7 +11519,6 @@
         ],
         "summary": "Queries for process instances that fulfill given parameters.",
         "description": "Queries for process instances that fulfill given parameters. Parameters may be static as well as dynamic runtime properties of process instances. The size of the result set can be retrieved by using the Get Instance Count method.",
-        "operationId": "getProcessInstances",
         "produces": [
           "application/json"
         ],
@@ -11961,7 +11736,6 @@
         ],
         "summary": "Queries for process instances that fulfill given parameters through a JSON object.",
         "description": "Queries for process instances that fulfill given parameters through a JSON object. This method is slightly more powerful than the Get Instances method because it allows filtering by multiple process variables of types `String`, `Number` or `Boolean`.",
-        "operationId": "queryProcessInstances",
         "consumes": [
           "application/json"
         ],
@@ -12018,7 +11792,6 @@
         ],
         "summary": "Queries for the number of process instances that fulfill given parameters.",
         "description": "Queries for the number of process instances that fulfill given parameters. Takes the same parameters as the Get Instances method.",
-        "operationId": "getProcessInstancesCount",
         "produces": [
           "application/json"
         ],
@@ -12189,7 +11962,6 @@
         ],
         "summary": "Queries for the number of process instances that fulfill the given parameters.",
         "description": "Queries for the number of process instances that fulfill the given parameters. This method takes the same message body as the Get Instances (POST) and therefore it is slightly more powerful than the Get Instance Count method.",
-        "operationId": "queryProcessInstancesCount",
         "consumes": [
           "application/json"
         ],
@@ -12227,7 +11999,6 @@
         ],
         "summary": "Deletes multiple process instances asynchronously (batch).",
         "description": "Deletes multiple process instances asynchronously (batch).",
-        "operationId": "deleteAsync",
         "consumes": [
           "application/json"
         ],
@@ -12265,7 +12036,6 @@
         ],
         "summary": "Deletes a set of process instances asynchronously (batch) based on a historic process instance query.",
         "description": "Deletes a set of process instances asynchronously (batch) based on a historic process instance query.",
-        "operationId": "deleteAsyncHistoricQueryBased",
         "consumes": [
           "application/json"
         ],
@@ -12303,7 +12073,6 @@
         ],
         "summary": "Create a batch to set retries of jobs associated with given processes asynchronously.",
         "description": "Create a batch to set retries of jobs associated with given processes asynchronously.",
-        "operationId": "setRetriesByProcess",
         "consumes": [
           "application/json"
         ],
@@ -12341,7 +12110,6 @@
         ],
         "summary": "Create a batch to set retries of jobs asynchronously based on a historic process instance query.",
         "description": "Create a batch to set retries of jobs asynchronously based on a historic process instance query.",
-        "operationId": "setRetriesByProcessHistoricQueryBased",
         "consumes": [
           "application/json"
         ],
@@ -12379,7 +12147,6 @@
         ],
         "summary": "Activates or suspends process instances with the given process definition id.",
         "description": "Activates or suspends process instances with the given process definition id.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -12414,7 +12181,6 @@
         ],
         "summary": "Update Suspension State Async.",
         "description": "Update Suspension State Async",
-        "operationId": "updateSuspensionStateAsync",
         "consumes": [
           "application/json"
         ],
@@ -12438,7 +12204,6 @@
         ],
         "summary": "Retrieves a process instance by id, according to the `ProcessInstance` interface in the engine.",
         "description": "Retrieves a process instance by id, according to the `ProcessInstance` interface in the engine.",
-        "operationId": "getProcessInstance",
         "produces": [
           "application/json"
         ],
@@ -12466,7 +12231,6 @@
         ],
         "summary": "Deletes a running process instance by id.",
         "description": "Deletes a running process instance by id.",
-        "operationId": "deleteProcessInstance",
         "produces": [
           "application/json"
         ],
@@ -12520,7 +12284,6 @@
         ],
         "summary": "Retrieves an Activity Instance (Tree) for a given process instance by id.",
         "description": "Retrieves an Activity Instance (Tree) for a given process instance by id.",
-        "operationId": "getActivityInstanceTree",
         "produces": [
           "application/json"
         ],
@@ -12553,7 +12316,6 @@
         ],
         "summary": "Submits a list of modification instructions to change a process instance's execution state.",
         "description": "Submits a list of modification instructions to change a process instance's execution state. A modification instruction is one of the following:\nStarting execution before an activity Starting execution after an activity on its single outgoing sequence flow Starting execution on a specific sequence flow Cancelling an activity instance, transition instance, or all instances (activity or transition) for an activity\nInstructions are executed immediately and in the order they are provided in this request's body. Variables can be provided with every starting instruction.\nThe exact semantics of modification can be read about in the user guide.",
-        "operationId": "modifyProcessInstance",
         "consumes": [
           "application/json"
         ],
@@ -12598,7 +12360,6 @@
         ],
         "summary": "Activates or suspends a given process instance by id.",
         "description": "Activates or suspends a given process instance by id.",
-        "operationId": "updateSuspensionState",
         "consumes": [
           "application/json"
         ],
@@ -12637,7 +12398,6 @@
         ],
         "summary": "Retrieves all variables of a given process instance by id.",
         "description": "Retrieves all variables of a given process instance by id.",
-        "operationId": "getVariablesResource",
         "produces": [
           "application/json"
         ],
@@ -12665,7 +12425,6 @@
         ],
         "summary": "Updates or deletes the variables in the context of a case execution.",
         "description": "Updates or deletes the variables in the context of a case execution. The updates do not propagate upwards in the case execution hierarchy. Please note: deletion precedes update.",
-        "operationId": "modifyVariables",
         "consumes": [
           "application/json"
         ],
@@ -12710,7 +12469,6 @@
         ],
         "summary": "Retrieves a variable from the context of a given case execution.",
         "description": "Retrieves a variable from the context of a given case execution. Does not traverse the parent case execution hierarchy.",
-        "operationId": "getVariable",
         "produces": [
           "application/json"
         ],
@@ -12756,7 +12514,6 @@
         ],
         "summary": "Sets a variable in the context of a given case execution.",
         "description": "Sets a variable in the context of a given case execution. Update does not propagate upwards in the case execution hierarchy.",
-        "operationId": "putVariable",
         "consumes": [
           "application/json"
         ],
@@ -12803,7 +12560,6 @@
         ],
         "summary": "Deletes a variable in the context of a given case execution.",
         "description": "Deletes a variable in the context of a given case execution. Deletion does not propagate upwards in the case execution hierarchy.",
-        "operationId": "deleteVariable",
         "produces": [
           "application/json"
         ],
@@ -12837,7 +12593,6 @@
         ],
         "summary": "Retrieves a binary variable from the context of a given case execution.",
         "description": "Retrieves a binary variable from the context of a given case execution. Does not traverse the parent case execution hierarchy. Applicable for byte array and file variables.",
-        "operationId": "getVariableBinary",
         "produces": [
           "application/json"
         ],
@@ -12875,7 +12630,6 @@
         ],
         "summary": "Sets the serialized value for a binary variable or the binary value for a file variable.",
         "description": "Sets the serialized value for a binary variable or the binary value for a file variable.",
-        "operationId": "setBinaryVariable",
         "consumes": [
           "multipart/form-data"
         ],
@@ -12924,7 +12678,6 @@
         ],
         "summary": "Queries for tasks that fulfill a given filter.",
         "description": "Queries for tasks that fulfill a given filter. The size of the result set can be retrieved by using the Get Task Count method.There are several query parameters (such as `assigneeExpression`) for specifying an EL expression. These are disabled by default to prevent remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "getTasks",
         "produces": [
           "application/json",
           "application/hal+json"
@@ -13217,7 +12970,6 @@
         ],
         "summary": "Queries for tasks that fulfill a given filter.",
         "description": "Queries for tasks that fulfill a given filter. This method is slightly more powerful than the Get Tasks method because it allows filtering by multiple process or task variables of types `String`, `Number` or `Boolean`. The size of the result set can be retrieved by using the Get Task Count (POST) method.There are several parameters (such as `assigneeExpression`) for specifying an EL expression. These are disabled by default to prevent remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "queryTasks",
         "consumes": [
           "application/json"
         ],
@@ -13274,7 +13026,6 @@
         ],
         "summary": "Retrieves the number of tasks that fulfill a provided filter.",
         "description": "Retrieves the number of tasks that fulfill a provided filter. Corresponds to the size of the result set when using the Get Tasks method.There are several query parameters (such as `assigneeExpression`) for specifying an EL expression. These are disabled by default to prevent remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "getTasksCount",
         "produces": [
           "application/json"
         ],
@@ -13550,7 +13301,6 @@
         ],
         "summary": "Retrieves the number of tasks that fulfill the given filter.",
         "description": "Retrieves the number of tasks that fulfill the given filter. Corresponds to the size of the result set of the Get Tasks (POST) method and takes the same parameters.There are several query parameters (such as `assigneeExpression`) for specifying an EL expression. These are disabled by default to prevent remote code execution. See the section on security considerations for custom code in the user guide for details.",
-        "operationId": "queryTasksCount",
         "consumes": [
           "application/json"
         ],
@@ -13588,7 +13338,6 @@
         ],
         "summary": "Creates a new task.",
         "description": "Creates a new task.",
-        "operationId": "createTask",
         "consumes": [
           "application/json"
         ],
@@ -13623,7 +13372,6 @@
         ],
         "summary": "Get Task Report Resource.",
         "description": "Get Task Report Resource",
-        "operationId": "getTaskReportResource",
         "produces": [
           "application/json"
         ],
@@ -13641,7 +13389,6 @@
         ],
         "summary": "Retrieves the number of tasks for each candidate group.",
         "description": "Retrieves the number of tasks for each candidate group.",
-        "operationId": "getTaskCountByCandidateGroupReport",
         "produces": [
           "application/json",
           "text/csv",
@@ -13667,7 +13414,6 @@
         ],
         "summary": "Retrieves a task by id.",
         "description": "Retrieves a task by id.",
-        "operationId": "getTask",
         "produces": [
           "application/json"
         ],
@@ -13695,7 +13441,6 @@
         ],
         "summary": "Updates a task.",
         "description": "Updates a task.",
-        "operationId": "updateTask",
         "consumes": [
           "application/json"
         ],
@@ -13738,7 +13483,6 @@
         ],
         "summary": "Delete Task.",
         "description": "Delete Task",
-        "operationId": "deleteTask",
         "produces": [
           "application/json"
         ],
@@ -13771,7 +13515,6 @@
         ],
         "summary": "Changes the assignee of a task to a specific user.",
         "description": "Changes the assignee of a task to a specific user.Note: The difference with the Claim Task method is that this method does not check if the task already has a user assigned to it.",
-        "operationId": "setAssignee",
         "consumes": [
           "application/json"
         ],
@@ -13813,7 +13556,6 @@
         ],
         "summary": "Gets the attachments for a task.",
         "description": "Gets the attachments for a task.",
-        "operationId": "getAttachmentResource",
         "produces": [
           "application/json"
         ],
@@ -13843,7 +13585,6 @@
         ],
         "summary": "Creates an attachment for a task.",
         "description": "Creates an attachment for a task.",
-        "operationId": "addAttachment",
         "consumes": [
           "multipart/form-data"
         ],
@@ -13885,7 +13626,6 @@
         ],
         "summary": "Retrieves a task attachment by task id and attachment id.",
         "description": "Retrieves a task attachment by task id and attachment id.",
-        "operationId": "getAttachment",
         "produces": [
           "application/json"
         ],
@@ -13923,7 +13663,6 @@
         ],
         "summary": "Removes an attachment from a task by id.",
         "description": "Removes an attachment from a task by id.",
-        "operationId": "deleteAttachment",
         "produces": [
           "application/json"
         ],
@@ -13963,7 +13702,6 @@
         ],
         "summary": "Retrieves the binary content of a task attachment by task id and attachment id.",
         "description": "Retrieves the binary content of a task attachment by task id and attachment id.",
-        "operationId": "getAttachmentData",
         "produces": [
           "application/octet-stream"
         ],
@@ -14003,7 +13741,6 @@
         ],
         "summary": "Claims a task for a specific user.",
         "description": "Claims a task for a specific user.Note: The difference with the Set Assignee method is that here a check is performed to see if the task already has a user assigned to it.",
-        "operationId": "claim",
         "consumes": [
           "application/json"
         ],
@@ -14045,7 +13782,6 @@
         ],
         "summary": "Gets the comments for a task by id.",
         "description": "Gets the comments for a task by id.",
-        "operationId": "getTaskCommentResource",
         "produces": [
           "application/json"
         ],
@@ -14075,7 +13811,6 @@
         ],
         "summary": "Creates a comment for a task by id.",
         "description": "Creates a comment for a task by id.",
-        "operationId": "createComment",
         "consumes": [
           "application/json"
         ],
@@ -14123,7 +13858,6 @@
         ],
         "summary": "Retrieves a task comment by task id and comment id.",
         "description": "Retrieves a task comment by task id and comment id.",
-        "operationId": "getComment",
         "produces": [
           "application/json"
         ],
@@ -14163,7 +13897,6 @@
         ],
         "summary": "Completes a task and updates process variables.",
         "description": "Completes a task and updates process variables.",
-        "operationId": "complete",
         "consumes": [
           "application/json"
         ],
@@ -14208,7 +13941,6 @@
         ],
         "summary": "Delegates a task to another user.",
         "description": "Delegates a task to another user.",
-        "operationId": "delegate",
         "consumes": [
           "application/json"
         ],
@@ -14250,7 +13982,6 @@
         ],
         "summary": "Get Deployed Form.",
         "description": "Get Deployed Form",
-        "operationId": "getDeployedForm",
         "produces": [
           "application/json"
         ],
@@ -14277,7 +14008,6 @@
         ],
         "summary": "Retrieves the form key for a task.",
         "description": "Retrieves the form key for a task. The form key corresponds to the `FormData#formKey` property in the engine. This key can be used to do task-specific form rendering in client applications. Additionally, the context path of the containing process application is returned.",
-        "operationId": "getForm",
         "produces": [
           "application/json"
         ],
@@ -14310,7 +14040,6 @@
         ],
         "summary": "Retrieves the form variables for a task (only if they are defined via the Generated Task Form approach).",
         "description": "Retrieves the form variables for a task (only if they are defined via the Generated Task Form approach). The form variables take form data specified on the task into account. If form fields are defined, the variable types and default values of the form fields are taken into account.",
-        "operationId": "getFormVariables",
         "produces": [
           "application/json"
         ],
@@ -14361,7 +14090,6 @@
         ],
         "summary": "Gets the identity links for a task by id, which are the users and groups that are in some relation to it (including assignee and owner).",
         "description": "Gets the identity links for a task by id, which are the users and groups that are in some relation to it (including assignee and owner).",
-        "operationId": "getIdentityLinks",
         "produces": [
           "application/json"
         ],
@@ -14402,7 +14130,6 @@
         ],
         "summary": "Adds an identity link to a task by id.",
         "description": "Adds an identity link to a task by id. Can be used to link any user or group to a task and specify a relation.",
-        "operationId": "addIdentityLink",
         "consumes": [
           "application/json"
         ],
@@ -14444,7 +14171,6 @@
         ],
         "summary": "Removes an identity link from a task by id.",
         "description": "Removes an identity link from a task by id.",
-        "operationId": "deleteIdentityLink",
         "consumes": [
           "application/json"
         ],
@@ -14486,7 +14212,6 @@
         ],
         "summary": "Retrieves all variables of a given task by id.",
         "description": "Retrieves all variables of a given task by id.",
-        "operationId": "getLocalVariables",
         "produces": [
           "application/json"
         ],
@@ -14514,7 +14239,6 @@
         ],
         "summary": "Updates or deletes the variables in the context of a case execution.",
         "description": "Updates or deletes the variables in the context of a case execution. The updates do not propagate upwards in the case execution hierarchy. Please note: deletion precedes update.",
-        "operationId": "modifyVariables",
         "consumes": [
           "application/json"
         ],
@@ -14559,7 +14283,6 @@
         ],
         "summary": "Retrieves a variable from the context of a given case execution.",
         "description": "Retrieves a variable from the context of a given case execution. Does not traverse the parent case execution hierarchy.",
-        "operationId": "getVariable",
         "produces": [
           "application/json"
         ],
@@ -14605,7 +14328,6 @@
         ],
         "summary": "Sets a variable in the context of a given case execution.",
         "description": "Sets a variable in the context of a given case execution. Update does not propagate upwards in the case execution hierarchy.",
-        "operationId": "putVariable",
         "consumes": [
           "application/json"
         ],
@@ -14652,7 +14374,6 @@
         ],
         "summary": "Deletes a variable in the context of a given case execution.",
         "description": "Deletes a variable in the context of a given case execution. Deletion does not propagate upwards in the case execution hierarchy.",
-        "operationId": "deleteVariable",
         "produces": [
           "application/json"
         ],
@@ -14686,7 +14407,6 @@
         ],
         "summary": "Retrieves a binary variable from the context of a given case execution.",
         "description": "Retrieves a binary variable from the context of a given case execution. Does not traverse the parent case execution hierarchy. Applicable for byte array and file variables.",
-        "operationId": "getVariableBinary",
         "produces": [
           "application/json"
         ],
@@ -14724,7 +14444,6 @@
         ],
         "summary": "Sets the serialized value for a binary variable or the binary value for a file variable.",
         "description": "Sets the serialized value for a binary variable or the binary value for a file variable.",
-        "operationId": "setBinaryVariable",
         "consumes": [
           "multipart/form-data"
         ],
@@ -14773,7 +14492,6 @@
         ],
         "summary": "Retrieves the rendered form for a task.",
         "description": "Retrieves the rendered form for a task. This method can be used to get the HTML rendering of a Generated Task Form.",
-        "operationId": "getRenderedForm",
         "produces": [
           "application/xhtml+xml"
         ],
@@ -14803,7 +14521,6 @@
         ],
         "summary": "Resolves a task and updates execution variables.",
         "description": "Resolves a task and updates execution variables.",
-        "operationId": "resolve",
         "consumes": [
           "application/json"
         ],
@@ -14848,7 +14565,6 @@
         ],
         "summary": "Completes a task and updates process variables using a form submit.",
         "description": "Completes a task and updates process variables using a form submit. There are two difference between this method and the `complete` method:* If the task is in state `PENDING` - i.e., has been delegated before, it is not completed but resolved. Otherwise it will be completed.\n* If the task has Form Field Metadata defined, the process engine will perform backend validation for any form fields which have validators defined. See the [Generated Task Forms]() section of the [User Guide]() for more information.",
-        "operationId": "submit",
         "consumes": [
           "application/json"
         ],
@@ -14893,7 +14609,6 @@
         ],
         "summary": "Resets a task's assignee.",
         "description": "Resets a task's assignee. If successful, the task is not assigned to a user.",
-        "operationId": "unclaim",
         "produces": [
           "application/json"
         ],
@@ -14923,7 +14638,6 @@
         ],
         "summary": "Retrieves all variables visible from the task.",
         "description": "Retrieves all variables visible from the task. A variable is visible from the task if it is a local task variable or declared in a parent scope of the task. See documentation on visiblity of variables.",
-        "operationId": "getVariables",
         "produces": [
           "application/json"
         ],
@@ -14951,7 +14665,6 @@
         ],
         "summary": "Updates or deletes the variables in the context of a case execution.",
         "description": "Updates or deletes the variables in the context of a case execution. The updates do not propagate upwards in the case execution hierarchy. Please note: deletion precedes update.",
-        "operationId": "modifyVariables",
         "consumes": [
           "application/json"
         ],
@@ -14996,7 +14709,6 @@
         ],
         "summary": "Retrieves a variable from the context of a given case execution.",
         "description": "Retrieves a variable from the context of a given case execution. Does not traverse the parent case execution hierarchy.",
-        "operationId": "getVariable",
         "produces": [
           "application/json"
         ],
@@ -15042,7 +14754,6 @@
         ],
         "summary": "Sets a variable in the context of a given case execution.",
         "description": "Sets a variable in the context of a given case execution. Update does not propagate upwards in the case execution hierarchy.",
-        "operationId": "putVariable",
         "consumes": [
           "application/json"
         ],
@@ -15089,7 +14800,6 @@
         ],
         "summary": "Deletes a variable in the context of a given case execution.",
         "description": "Deletes a variable in the context of a given case execution. Deletion does not propagate upwards in the case execution hierarchy.",
-        "operationId": "deleteVariable",
         "produces": [
           "application/json"
         ],
@@ -15123,7 +14833,6 @@
         ],
         "summary": "Retrieves a binary variable from the context of a given case execution.",
         "description": "Retrieves a binary variable from the context of a given case execution. Does not traverse the parent case execution hierarchy. Applicable for byte array and file variables.",
-        "operationId": "getVariableBinary",
         "produces": [
           "application/json"
         ],
@@ -15161,7 +14870,6 @@
         ],
         "summary": "Sets the serialized value for a binary variable or the binary value for a file variable.",
         "description": "Sets the serialized value for a binary variable or the binary value for a file variable.",
-        "operationId": "setBinaryVariable",
         "consumes": [
           "multipart/form-data"
         ],
@@ -15210,7 +14918,6 @@
         ],
         "summary": "Query for a list of tenants using a list of parameters.",
         "description": "Query for a list of tenants using a list of parameters. The size of the result set can be retrieved by using the Get Tenant Count method.",
-        "operationId": "queryTenants",
         "produces": [
           "application/json"
         ],
@@ -15323,7 +15030,6 @@
         ],
         "summary": "The `/tenant` resource supports two custom OPTIONS requests, one for the resource as such and one for individual tenant instances.",
         "description": "The `/tenant` resource supports two custom OPTIONS requests, one for the resource as such and one for individual tenant instances. The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the `/tenant` resource. If the user can perform an operation or not may depend on various things, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -15344,7 +15050,6 @@
         ],
         "summary": "Query for tenants using a list of parameters and retrieves the count.",
         "description": "Query for tenants using a list of parameters and retrieves the count.",
-        "operationId": "getTenantCount",
         "produces": [
           "application/json"
         ],
@@ -15412,7 +15117,6 @@
         ],
         "summary": "Create a new tenant.",
         "description": "Create a new tenant.",
-        "operationId": "createTenant",
         "consumes": [
           "application/json"
         ],
@@ -15450,7 +15154,6 @@
         ],
         "summary": "Retrieves a tenant.",
         "description": "Retrieves a tenant.",
-        "operationId": "getTenant",
         "produces": [
           "application/json"
         ],
@@ -15478,7 +15181,6 @@
         ],
         "summary": "Updates a given tenant.",
         "description": "Updates a given tenant.",
-        "operationId": "updateTenant",
         "consumes": [
           "application/json"
         ],
@@ -15524,7 +15226,6 @@
         ],
         "summary": "Deletes a tenant by id.",
         "description": "Deletes a tenant by id.",
-        "operationId": "deleteTenant",
         "produces": [
           "application/json"
         ],
@@ -15555,7 +15256,6 @@
         ],
         "summary": "The `/tenant` resource supports two custom OPTIONS requests, one for the resource as such and one for individual tenant instances.",
         "description": "The `/tenant` resource supports two custom OPTIONS requests, one for the resource as such and one for individual tenant instances. The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the `/tenant` resource. If the user can perform an operation or not may depend on various things, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -15585,7 +15285,6 @@
         ],
         "summary": "Get Tenant Group Members Resource.",
         "description": "Get Tenant Group Members Resource",
-        "operationId": "getTenantGroupMembersResource",
         "produces": [
           "application/json"
         ],
@@ -15610,7 +15309,6 @@
         ],
         "summary": "The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the resource.",
         "description": "The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the resource. If the user can perform an operation or not may depend on various things, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -15640,7 +15338,6 @@
         ],
         "summary": "Creates a membership between a tenant and a group.",
         "description": "Creates a membership between a tenant and a group.",
-        "operationId": "createMembership",
         "produces": [
           "application/json"
         ],
@@ -15678,7 +15375,6 @@
         ],
         "summary": "Deletes a membership between a tenant and a group.",
         "description": "Deletes a membership between a tenant and a group.",
-        "operationId": "deleteMembership",
         "produces": [
           "application/json"
         ],
@@ -15718,7 +15414,6 @@
         ],
         "summary": "Get Tenant User Members Resource.",
         "description": "Get Tenant User Members Resource",
-        "operationId": "getTenantUserMembersResource",
         "produces": [
           "application/json"
         ],
@@ -15743,7 +15438,6 @@
         ],
         "summary": "The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the resource.",
         "description": "The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the resource. If the user can perform an operation or not may depend on various things, including the users authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -15773,7 +15467,6 @@
         ],
         "summary": "Creates a membership between a tenant and an user.",
         "description": "Creates a membership between a tenant and an user.",
-        "operationId": "createMembership",
         "produces": [
           "application/json"
         ],
@@ -15811,7 +15504,6 @@
         ],
         "summary": "Deletes a membership between a tenant and an user.",
         "description": "Deletes a membership between a tenant and an user.",
-        "operationId": "deleteMembership",
         "produces": [
           "application/json"
         ],
@@ -15851,7 +15543,6 @@
         ],
         "summary": "Query for a list of users using a list of parameters.",
         "description": "Query for a list of users using a list of parameters. The size of the result set can be retrieved by using the Get User Count method.",
-        "operationId": "queryUsers",
         "produces": [
           "application/json"
         ],
@@ -15985,7 +15676,6 @@
         ],
         "summary": "The `/user` resource supports two custom OPTIONS requests, one for the resource as such and one for individual user instances.",
         "description": "The `/user` resource supports two custom OPTIONS requests, one for the resource as such and one for individual user instances. The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the `/user` resource. If the user can perform an operation or not may depend on various things, including the user's authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -16006,7 +15696,6 @@
         ],
         "summary": "Query for users using a list of parameters and retrieves the count.",
         "description": "Query for users using a list of parameters and retrieves the count.",
-        "operationId": "getUserCount",
         "produces": [
           "application/json"
         ],
@@ -16095,7 +15784,6 @@
         ],
         "summary": "Create a new user.",
         "description": "Create a new user.",
-        "operationId": "createUser",
         "consumes": [
           "*/*"
         ],
@@ -16133,7 +15821,6 @@
         ],
         "summary": "Get User.",
         "description": "Get User",
-        "operationId": "getUser",
         "produces": [
           "application/json"
         ],
@@ -16157,7 +15844,6 @@
         ],
         "summary": "Deletes a user by id.",
         "description": "Deletes a user by id.",
-        "operationId": "deleteUser",
         "produces": [
           "application/json"
         ],
@@ -16187,7 +15873,6 @@
         ],
         "summary": "The `/user` resource supports two custom OPTIONS requests, one for the resource as such and one for individual user instances.",
         "description": "The `/user` resource supports two custom OPTIONS requests, one for the resource as such and one for individual user instances. The OPTIONS request allows checking for the set of available operations that the currently authenticated user can perform on the `/user` resource. If the user can perform an operation or not may depend on various things, including the user's authorizations to interact with this resource and the internal context of the process engine.",
-        "operationId": "availableOperations",
         "produces": [
           "application/json"
         ],
@@ -16216,7 +15901,6 @@
         ],
         "summary": "Updates a user's credentials (password).",
         "description": "Updates a user's credentials (password).",
-        "operationId": "updateCredentials",
         "consumes": [
           "application/json"
         ],
@@ -16266,7 +15950,6 @@
         ],
         "summary": "Retrieves a user's profile.",
         "description": "Retrieves a user's profile.",
-        "operationId": "getUserProfile",
         "produces": [
           "application/json"
         ],
@@ -16296,7 +15979,6 @@
         ],
         "summary": "Updates the profile information of an already existing user.",
         "description": "Updates the profile information of an already existing user.",
-        "operationId": "updateProfile",
         "consumes": [
           "application/json"
         ],
@@ -16343,7 +16025,6 @@
         ],
         "summary": "Query for variable instances that fulfill given parameters.",
         "description": "Query for variable instances that fulfill given parameters. Parameters may be the properties of variable instances, such as the name or type. The size of the result set can be retrieved by using the Get Variable Instance Count method.",
-        "operationId": "getVariableInstances",
         "produces": [
           "application/json"
         ],
@@ -16498,7 +16179,6 @@
         ],
         "summary": "Query for variable instances that fulfill given parameters through a JSON object.",
         "description": "Query for variable instances that fulfill given parameters through a JSON object. This method is slightly more powerful than the Get Variable Instances method because it allows filtering by multiple variable instances of types `String`, `Number` or `Boolean`.",
-        "operationId": "queryVariableInstances",
         "consumes": [
           "application/json"
         ],
@@ -16563,7 +16243,6 @@
         ],
         "summary": "Query for the number of variable instances that fulfill given parameters.",
         "description": "Query for the number of variable instances that fulfill given parameters. Takes the same parameters as the Get Variable Instances method.",
-        "operationId": "getVariableInstancesCount",
         "produces": [
           "application/json"
         ],
@@ -16685,7 +16364,6 @@
         ],
         "summary": "Query for the number of variable instances that fulfill given parameters.",
         "description": "Query for the number of variable instances that fulfill given parameters. This method takes the same message body as the Get Variable Instances (POST) method and therefore it is slightly more powerful than the Get Variable Instance Count method.",
-        "operationId": "queryVariableInstancesCount",
         "consumes": [
           "application/json"
         ],
@@ -16723,7 +16401,6 @@
         ],
         "summary": "Retrieves a variable by id.",
         "description": "Retrieves a variable by id.",
-        "operationId": "getVariableInstance",
         "produces": [
           "application/json"
         ],
@@ -16753,7 +16430,6 @@
         ],
         "summary": "Retrieves the content of a variable by id.",
         "description": "Retrieves the content of a variable by id. Applicable for byte array and file variables.",
-        "operationId": "getResourceBinary",
         "produces": [
           "application/json"
         ],
