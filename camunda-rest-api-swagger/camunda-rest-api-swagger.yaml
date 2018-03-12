@@ -10471,7 +10471,9 @@ paths:
           type: string
       responses:
         '200':
-          description: Request successful.
+          description: Request successful
+          schema:
+            $ref: '#/definitions/VariablesDto'
         '500':
           description: >-
             Process instance with given id does not exist. See the Introduction
@@ -16051,3 +16053,7 @@ definitions:
         type: object
         additionalProperties:
           type: object
+  VariablesDto:
+    type: object
+    additionalProperties:
+      $ref: '#/definitions/VariableValueDto'
