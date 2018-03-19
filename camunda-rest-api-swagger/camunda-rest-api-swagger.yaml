@@ -3540,17 +3540,19 @@ paths:
       produces:
         - application/json
       parameters:
-        - in: body
-          name: body
-          description: Parameter multipartFormData
-          required: false
-          schema:
-            $ref: '#/definitions/MultipartFormData'
+        - in: formData
+          name: deployment-name
+          type: string
+          required: true
+          description: The name for the deployment to be created.
+        - in: formData
+          name: file
+          type: file
+          required: true
+          description: The file to upload.
       responses:
         '200':
           description: Request successful.
-          schema:
-            $ref: '#/definitions/DeploymentDto'
   '/deployment/{id}':
     get:
       tags:
@@ -10471,7 +10473,7 @@ paths:
           type: string
       responses:
         '200':
-          description: Request successful
+          description: Request successful.
           schema:
             $ref: '#/definitions/VariablesDto'
         '500':
