@@ -3541,6 +3541,11 @@ paths:
         - application/json
       parameters:
         - in: formData
+          name: upfile
+          type: file
+          required: true
+          description: The file to upload.
+        - in: formData
           name: deployment-name
           type: string
           required: false
@@ -3577,11 +3582,6 @@ paths:
           type: string
           required: false
           description: The tenant id for the deployment to be created.
-        - in: formData
-          name: upfile
-          type: file
-          required: true
-          description: The file to upload.
       responses:
         '200':
           description: Request successful.
