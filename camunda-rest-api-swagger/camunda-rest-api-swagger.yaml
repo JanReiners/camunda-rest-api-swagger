@@ -14278,7 +14278,6 @@ definitions:
         description: The id of the user who created the comment.
       time:
         type: string
-        format: date-time
         description: The time when the comment was created.
       taskId:
         type: string
@@ -14483,7 +14482,6 @@ definitions:
         description: The source of the deployment.
       deploymentTime:
         type: string
-        format: date-time
         description: The date and time of the deployment.
       tenantId:
         type: string
@@ -14539,7 +14537,6 @@ definitions:
           Corresponds to the id in the process model.
       createdDate:
         type: string
-        format: date-time
         description: >-
           The time the subscription was created by the engine. Format
           yyyy-MM-dd'T'HH:mm:ss.
@@ -14610,7 +14607,6 @@ definitions:
         description: The id of the external task.
       lockExpirationTime:
         type: string
-        format: date-time
         description: The date that the task's most recent lock expires or has expired.
       processDefinitionId:
         type: string
@@ -14846,7 +14842,6 @@ definitions:
         type: string
       incidentTimestamp:
         type: string
-        format: date-time
       incidentType:
         type: string
       activityId:
@@ -14969,7 +14964,6 @@ definitions:
         description: The number of retries this job has left.
       dueDate:
         type: string
-        format: date-time
         description: The date on which this job is supposed to be processed.
       suspended:
         type: boolean
@@ -14985,7 +14979,6 @@ definitions:
     properties:
       duedate:
         type: string
-        format: date-time
         description: The date to set when the job has the next execution.
   JobQueryDto:
     type: object
@@ -15588,14 +15581,11 @@ definitions:
         description: The user to assign to this task.
       created:
         type: string
-        format: date-time
       due:
         type: string
-        format: date-time
         description: 'The due date for the task. Format yyyy-MM-dd''T''HH:mm:ss.'
       followUp:
         type: string
-        format: date-time
         description: 'The follow-up date for the task. Format yyyy-MM-dd''T''HH:mm:ss.'
       delegationState:
         type: string
@@ -15840,52 +15830,42 @@ definitions:
         description: Restrict to tasks that belong to a case execution with the given id.
       dueAfter:
         type: string
-        format: date-time
       dueAfterExpression:
         type: string
       dueBefore:
         type: string
-        format: date-time
       dueBeforeExpression:
         type: string
       dueDate:
         type: string
-        format: date-time
       dueDateExpression:
         type: string
       followUpAfter:
         type: string
-        format: date-time
       followUpAfterExpression:
         type: string
       followUpBefore:
         type: string
-        format: date-time
       followUpBeforeExpression:
         type: string
       followUpBeforeOrNotExistent:
         type: string
-        format: date-time
       followUpBeforeOrNotExistentExpression:
         type: string
       followUpDate:
         type: string
-        format: date-time
       followUpDateExpression:
         type: string
       createdAfter:
         type: string
-        format: date-time
       createdAfterExpression:
         type: string
       createdBefore:
         type: string
-        format: date-time
       createdBeforeExpression:
         type: string
       createdOn:
         type: string
-        format: date-time
       createdOnExpression:
         type: string
       delegationState:
